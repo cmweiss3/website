@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 MAY 2022 15:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 MAY 2022 15:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -645,56 +645,59 @@ Package xcolor Warning: Incompatible color definition on input line 382.
 Package xcolor Warning: Incompatible color definition on input line 384.
 
 
-Package xcolor Warning: Incompatible color definition on input line 391.
+Package xcolor Warning: Incompatible color definition on input line 392.
 
 
-Package xcolor Warning: Incompatible color definition on input line 393.
+Overfull \hbox (0.43434pt too wide) in paragraph at lines 392--393
+\OT1/ptm/m/n/10.95 ``[][]Atyp-i-cal Vi-o-lence and Con-flict Dy-nam-ics: Ev-i-d
+ence from Jerusalem[][]." (Con-di-tion-ally
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 394.
 
 
-Package xcolor Warning: Incompatible color definition on input line 397.
+Package xcolor Warning: Incompatible color definition on input line 396.
 
 
-Package xcolor Warning: Incompatible color definition on input line 399.
+Package xcolor Warning: Incompatible color definition on input line 398.
 
 
-Package xcolor Warning: Incompatible color definition on input line 401.
+Package xcolor Warning: Incompatible color definition on input line 400.
 
 
-Overfull \hbox (13.65099pt too wide) in paragraph at lines 401--402
+Package xcolor Warning: Incompatible color definition on input line 402.
+
+
+Overfull \hbox (13.65099pt too wide) in paragraph at lines 402--403
 []\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 . ``[][]Mi-nor-ity Rep
 -re-sen-ta-tion in Health-care Pro-vi-sion Re-duces Prej-u-dice:
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 440.
+Package xcolor Warning: Incompatible color definition on input line 441.
 
 
-Overfull \hbox (6.84096pt too wide) in paragraph at lines 440--440
+Overfull \hbox (6.84096pt too wide) in paragraph at lines 441--441
 []\OT1/ptm/m/n/10.95 Marwa Sha-l-aby, \OT1/ptm/b/n/10.95 Cha-gai Weiss\OT1/ptm/
 m/n/10.95 , Ellen Lust, Kris-ten Kao, and coau-thors, ``[][]The Dy-nam-ics
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 440.
+Package xcolor Warning: Incompatible color definition on input line 441.
 
 
-Overfull \hbox (14.61542pt too wide) in paragraph at lines 440--441
+Overfull \hbox (14.61542pt too wide) in paragraph at lines 441--442
 []\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 . ``[][]Shar-ing Space
 s: Seg-re-ga-tion, In-te-gra-tion, and In-ter-group Re-la-tions.[][]"
  []
 
 [2]
 
-Package xcolor Warning: Incompatible color definition on input line 441.
-
-
 Package xcolor Warning: Incompatible color definition on input line 442.
 
 
-Package xcolor Warning: Incompatible color definition on input line 472.
+Package xcolor Warning: Incompatible color definition on input line 443.
 
 
 Package xcolor Warning: Incompatible color definition on input line 473.
@@ -703,7 +706,10 @@ Package xcolor Warning: Incompatible color definition on input line 473.
 Package xcolor Warning: Incompatible color definition on input line 474.
 
 
-Overfull \hbox (11.64713pt too wide) in paragraph at lines 479--480
+Package xcolor Warning: Incompatible color definition on input line 475.
+
+
+Overfull \hbox (11.64713pt too wide) in paragraph at lines 480--481
 []\OT1/ptm/b/n/10.95 2022\OT1/ptm/m/n/10.95 : \OT1/ptm/b/n/10.95 UC Ir-vice\OT1
 /ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 De-part-ment of Po-lit-i-cal Sci-ence, Sur
 -vey Method-ol-ogy Sem-i-nar\OT1/ptm/m/n/10.95 , \OT1/ptm/b/n/10.95 Har-vard\OT
@@ -711,7 +717,7 @@ Overfull \hbox (11.64713pt too wide) in paragraph at lines 479--480
  []
 
 
-Overfull \hbox (14.4279pt too wide) in paragraph at lines 481--482
+Overfull \hbox (14.4279pt too wide) in paragraph at lines 482--483
 []\OT1/ptm/b/n/10.95 2020\OT1/ptm/m/n/10.95 : \OT1/ptm/b/n/10.95 Ben Gu-rion Un
 i-ver-sity \OT1/ptm/m/n/10.95 (Is-rael), \OT1/ptm/m/it/10.95 De-part-ment of Ec
 o-nomics\OT1/ptm/m/n/10.95 , \OT1/ptm/b/n/10.95 WZB Berlin \OT1/ptm/m/n/10.95 (
@@ -719,64 +725,64 @@ Ger-many),
  []
 
 
-Overfull \hbox (3.83977pt too wide) in paragraph at lines 486--487
+Overfull \hbox (3.83977pt too wide) in paragraph at lines 487--488
 []\OT1/ptm/b/n/10.95 2022\OT1/ptm/m/n/10.95 : Over-com-ing Prej-u-dice Con-fer-
 ence (Uni-ver-sity of Penn-syl-va-nia), MPSA (Chicago),
  []
 
 
-Overfull \hbox (32.19864pt too wide) in paragraph at lines 487--488
+Overfull \hbox (32.19864pt too wide) in paragraph at lines 488--489
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : APSA (Seat-tle), Pol-Meth Eu-rope
  (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
  []
 
 
-Overfull \hbox (10.64929pt too wide) in paragraph at lines 489--490
+Overfull \hbox (10.64929pt too wide) in paragraph at lines 490--491
 \OT1/ptm/m/n/10.95 ISA (Toronto), MPSA (Chicago), Po-lit-i-cal Psy-chol-ogy APS
 A Pre-Conference (Wash-ing-ton
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 587.
+Package xcolor Warning: Incompatible color definition on input line 588.
 
 [4]
 
-Package xcolor Warning: Incompatible color definition on input line 617.
+Package xcolor Warning: Incompatible color definition on input line 618.
 
 
-Package xcolor Warning: Incompatible color definition on input line 617.
+Package xcolor Warning: Incompatible color definition on input line 618.
 
 
-Package xcolor Warning: Incompatible color definition on input line 632.
+Package xcolor Warning: Incompatible color definition on input line 633.
 
 
-Package xcolor Warning: Incompatible color definition on input line 632.
+Package xcolor Warning: Incompatible color definition on input line 633.
 
 
-Package xcolor Warning: Incompatible color definition on input line 639.
+Package xcolor Warning: Incompatible color definition on input line 640.
 
 
-Package xcolor Warning: Incompatible color definition on input line 645.
+Package xcolor Warning: Incompatible color definition on input line 646.
 
 
-Package xcolor Warning: Incompatible color definition on input line 647.
+Package xcolor Warning: Incompatible color definition on input line 648.
 
 
 AED: lastpage setting LastPage
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 673.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 673.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 674.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 674.
  (./CMW CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 673.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 673.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 674.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 674.
 Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
 (rerunfilecheck)             Checksum: 4EE4CB94FA2597AA19B8678ED99F92C8;1035.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 673.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 674.
  ) 
 Here is how much of TeX's memory you used:
  9597 strings out of 493014
@@ -793,7 +799,7 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (5 pages, 95058 bytes).
+Output written on "CMW CV.pdf" (5 pages, 95060 bytes).
 PDF statistics:
  194 PDF objects out of 1000 (max. 8388607)
  179 compressed objects within 2 object streams
