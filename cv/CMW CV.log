@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 SEP 2022 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 SEP 2022 18:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -694,12 +694,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 409--410
 Package xcolor Warning: Incompatible color definition on input line 411.
 
 
-Overfull \hbox (3.20464pt too wide) in paragraph at lines 411--412
-\OT1/ptm/m/n/10.95 in Polic-ing and Pref-er-ences for In-creas-ing Of-fi-cer Di
--ver-sity.[][]" (Un-der Re-view). (Con-di-tion-ally
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
@@ -905,7 +899,7 @@ live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (5 pages, 95509 bytes).
+Output written on "CMW CV.pdf" (5 pages, 95494 bytes).
 PDF statistics:
  195 PDF objects out of 1000 (max. 8388607)
  180 compressed objects within 2 object streams
