@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  23 JAN 2023 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  23 JAN 2023 21:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -816,11 +816,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 510--513
  []
 
 
-Overfull \hbox (22.5533pt too wide) in paragraph at lines 519--520
-\OT1/ptm/m/it/10.95 Iden-tity Pol-i-tics Sem-iner \OT1/ptm/m/n/10.95 (\OT1/ptm/
-m/it/10.95 sched-uled\OT1/ptm/m/n/10.95 ), \OT1/ptm/b/n/10.95 Stan-ford\OT1/ptm
-/m/n/10.95 , \OT1/ptm/m/it/10.95 Po-lar-iza-tion and So-cial Change Lab \OT1/pt
-m/m/n/10.95 (\OT1/ptm/m/it/10.95 sched-uled\OT1/ptm/m/n/10.95 ),
+Overfull \hbox (14.20935pt too wide) in paragraph at lines 519--520
+\OT1/ptm/b/n/10.95 WashU\OT1/ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 10th Com-par-a
+-tive Pol-i-tics An-nual Con-fer-ence \OT1/ptm/m/n/10.95 (\OT1/ptm/m/it/10.95 s
+ched-uled\OT1/ptm/m/n/10.95 ), \OT1/ptm/b/n/10.95 Stan-ford\OT1/ptm/m/n/10.95 ,
+ \OT1/ptm/m/it/10.95 CD-DRL Speaker
  []
 
 
@@ -923,7 +923,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (5 pages, 101310 bytes).
+Output written on "CMW CV.pdf" (5 pages, 101308 bytes).
 PDF statistics:
  202 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams
