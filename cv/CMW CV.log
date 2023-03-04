@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  1 MAR 2023 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  3 MAR 2023 17:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -855,6 +855,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 631--633
  []
 
 [4]
+Overfull \hbox (14.7016pt too wide) in paragraph at lines 637--638
+\OT1/ptm/m/it/10.95 Re-view, Cam-bridge Uni-ver-sity Press (El-e-ments in Ex-pe
+r-i-men-tal Po-lit-i-cal Sci-ence), Com-par-a-tive
+ []
+
+
 Overfull \hbox (4.12482pt too wide) in paragraph at lines 637--638
 \OT1/ptm/m/it/10.95 Eth-nop-o-l-i-tics, Fron-tiers in Psy-chol-ogy, Hu-man Righ
 t Re-view, In-ter-na-tional Stud-ies Quar-terly,
@@ -872,30 +878,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 637--638
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 639.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 639--656
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 663.
+Package xcolor Warning: Incompatible color definition on input line 641.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--658
+
+ []
 
 
 Package xcolor Warning: Incompatible color definition on input line 665.
 
 
-Package xcolor Warning: Incompatible color definition on input line 686.
+Package xcolor Warning: Incompatible color definition on input line 667.
 
 
-Package xcolor Warning: Incompatible color definition on input line 686.
+Package xcolor Warning: Incompatible color definition on input line 688.
 
 
-Package xcolor Warning: Incompatible color definition on input line 701.
+Package xcolor Warning: Incompatible color definition on input line 688.
 
 
-Package xcolor Warning: Incompatible color definition on input line 701.
+Package xcolor Warning: Incompatible color definition on input line 703.
+
+
+Package xcolor Warning: Incompatible color definition on input line 703.
 
 
 AED: lastpage setting LastPage
@@ -910,7 +921,7 @@ Here is how much of TeX's memory you used:
  31281 multiletter control sequences out of 15000+600000
  490631 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,80p,810b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,14n,80p,818b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -918,7 +929,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (5 pages, 101373 bytes).
+Output written on "CMW CV.pdf" (5 pages, 101411 bytes).
 PDF statistics:
  202 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams
