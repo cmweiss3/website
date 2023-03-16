@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  15 MAR 2023 14:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  16 MAR 2023 10:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -761,9 +761,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--428
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 430.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
@@ -844,13 +841,13 @@ Overfull \hbox (15.77364pt too wide) in paragraph at lines 538--539
  (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
  []
 
-[3]
+
 Overfull \hbox (3.65285pt too wide) in paragraph at lines 542--543
 \OT1/ptm/m/n/10.95 (Toronto), MPSA (Chicago), Po-lit-i-cal Psy-chol-ogy APSA Pr
 e-Conference (Wash-ing-ton D.C.),
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 630--632
 
  []
@@ -860,7 +857,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 633--635
 
  []
 
-[4]
+
 Overfull \hbox (14.7016pt too wide) in paragraph at lines 639--640
 \OT1/ptm/m/it/10.95 Re-view, Cam-bridge Uni-ver-sity Press (El-e-ments in Ex-pe
 r-i-men-tal Po-lit-i-cal Sci-ence), Com-par-a-tive
@@ -883,7 +880,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
@@ -921,24 +918,23 @@ Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
 (rerunfilecheck)             Checksum: C775C5DF0B59E0FEFB2444206D725D83;2142.
  ) 
 Here is how much of TeX's memory you used:
- 13295 strings out of 478268
- 202871 string characters out of 5846347
+ 13292 strings out of 478268
+ 202855 string characters out of 5846347
  521017 words of memory out of 5000000
  31281 multiletter control sequences out of 15000+600000
- 490631 words of font info for 75 fonts, out of 8000000 for 9000
+ 489879 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,14n,80p,818b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (5 pages, 101291 bytes).
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "CMW CV.pdf" (5 pages, 92450 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
+ 195 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
