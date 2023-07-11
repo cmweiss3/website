@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  11 JUL 2023 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  11 JUL 2023 16:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1043,7 +1043,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-No file weiss_book_overview.aux.
+(./weiss_book_overview.aux)
 \openout1 = `weiss_book_overview.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
@@ -1070,6 +1070,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1152,105 +1153,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 183.
 LaTeX Info: Redefining \pageref on input line 183.
 LaTeX Info: Redefining \nameref on input line 183.
+ (./weiss_book_overview.out) (./weiss_book_overview.out)
 \@outlinefile=\write4
 \openout4 = `weiss_book_overview.out'.
 
  [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `Allport1954' on page 2 undefined on input lin
-e 225.
-
-
-Package natbib Warning: Citation `Enos:2018aa' on page 2 undefined on input lin
-e 225.
-
-
-Package natbib Warning: Citation `Peyton:2021aa' on page 2 undefined on input l
-ine 225.
-
-
-Package natbib Warning: Citation `UNIES:2006tx' on page 2 undefined on input li
-ne 225.
-
-
-Package natbib Warning: Citation `Allport1954' on page 2 undefined on input lin
-e 225.
-
-
-Package natbib Warning: Citation `Fiske:1998aa' on page 2 undefined on input li
-ne 225.
-
-
-Package natbib Warning: Citation `Paluck:2020aa' on page 2 undefined on input l
-ine 225.
-
-
-Package natbib Warning: Citation `Greif:2006vz' on page 2 undefined on input li
-ne 237.
-
-
-Package natbib Warning: Citation `Allport1954' on page 2 undefined on input lin
-e 237.
-
-
-Package natbib Warning: Citation `Chauchard:2014aa' on page 2 undefined on inpu
-t line 237.
-
-
-Package natbib Warning: Citation `Chauchard:2017aa' on page 2 undefined on inpu
-t line 237.
-
-
-Package natbib Warning: Citation `Paluck:2020aa' on page 2 undefined on input l
-ine 237.
-
-
-Package natbib Warning: Citation `Greif:2006vz' on page 2 undefined on input li
-ne 240.
-
-
-Package natbib Warning: Citation `Posner:2005vn' on page 2 undefined on input l
-ine 240.
-
-
-Package natbib Warning: Citation `Pepinsky:2017aa' on page 2 undefined on input
- line 240.
-
-
-Package natbib Warning: Citation `Greif:2004uz' on page 2 undefined on input li
-ne 240.
-
-
-Package natbib Warning: Citation `Thelen:1999wi' on page 2 undefined on input l
-ine 240.
-
-
-Package natbib Warning: Citation `Jha:2013aa' on page 2 undefined on input line
- 242.
-
-
-Package natbib Warning: Citation `Jha:2022wp' on page 2 undefined on input line
- 242.
-
-
-Package natbib Warning: Citation `Allport1954' on page 2 undefined on input lin
-e 242.
-
-[2]
-
-Package natbib Warning: Citation `Bracic:2020ud' on page 3 undefined on input l
-ine 246.
-
-
-Package natbib Warning: Citation `Lajevardi:2020aa' on page 3 undefined on inpu
-t line 246.
-
-[3] [4] [5]
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+ [4] [5]
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  284.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
@@ -1287,50 +1201,38 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 284.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 284.
-
-
-Package natbib Warning: Citation `Weiss:2021aa' on page 6 undefined on input li
-ne 284.
-
-[6] [7] [8]
-No file weiss_book_overview.bbl.
+ [6] [7] [8]
+(./weiss_book_overview.bbl)
 \tf@thm=\write5
 \openout5 = `weiss_book_overview.thm'.
 
+ [9
 
-Package natbib Warning: There were undefined citations.
-
-(./weiss_book_overview.aux)
-
-Package rerunfilecheck Warning: File `weiss_book_overview.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `weiss_book_overview.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+] (./weiss_book_overview.aux)
+Package rerunfilecheck Info: File `weiss_book_overview.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 31 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31251 strings out of 478268
- 591569 string characters out of 5846347
- 1015625 words of memory out of 5000000
- 48863 multiletter control sequences out of 15000+600000
+ 31336 strings out of 478268
+ 593255 string characters out of 5846347
+ 1016275 words of memory out of 5000000
+ 48921 multiletter control sequences out of 15000+600000
  488734 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,106p,2079b,24478s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,8n,106p,2079b,24475s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
 l/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
 2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on weiss_book_overview.pdf (8 pages, 71785 bytes).
+Output written on weiss_book_overview.pdf (9 pages, 81402 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
