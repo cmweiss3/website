@@ -1,0 +1,304 @@
+%%%
+%%% Sample LaTeX document for the LaTeX Workshop
+%%%
+
+%%%% Preemble
+
+% document class
+\documentclass[12pt]{article}
+
+
+\usepackage[title]{appendix}
+\usepackage{verbatim}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
+
+% margins
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{mathptmx}
+
+
+\usepackage{titletoc}
+\usepackage{lipsum}
+%
+\usepackage{blindtext}
+\usepackage{threeparttable}
+
+% basic packages
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs}
+\usepackage{setspace} % spacing
+\doublespace
+\usepackage{latexsym} % math 
+\usepackage{amssymb,amsmath, bm} % math
+\usepackage{graphicx} % graphics
+\usepackage{marvosym} % some symbols
+\usepackage{nth}
+\usepackage{multirow}
+\usepackage{ntheorem}%hypothesis
+\theoremseparator{:}
+\newtheorem{hyp}{Hypothesis}
+\makeatletter
+\newcounter{subhyp} 
+\let\savedc@hyp\c@hyp
+\newenvironment{subhyp}
+ {%
+  \setcounter{subhyp}{0}%
+  \stepcounter{hyp}%
+  \edef\saved@hyp{\thehyp}% Save the current value of hyp
+  \let\c@hyp\c@subhyp     % Now hyp is subhyp
+  \renewcommand{\thehyp}{\saved@hyp\alph{hyp}}%
+ }
+ {}
+\newcommand{\normhyp}{%
+  \let\c@hyp\savedc@hyp % revert to the old one
+  \renewcommand\thehyp{\arabic{hyp}}%
+} 
+\makeatother
+
+% bibliography packages
+\usepackage[round]{natbib}
+\bibpunct{(}{)}{;}{a}{}{,}
+ \bibliographystyle{apsr.bst}
+
+\usepackage{graphicx}
+ \usepackage{lscape}
+%graphs
+\usepackage{smartdiagram}
+\usesmartdiagramlibrary{additions}
+\usepackage{newfloat}
+\usepackage{caption}
+
+\usepackage[table,xcdraw]{xcolor}
+% hyperref options: URL link
+\usepackage{color}
+\usepackage{fontawesome}
+\definecolor{mygray}{gray}{0.4}
+\usepackage[pdftex, bookmarksopen=true, bookmarksnumbered=true,
+pdfstartview=FitH, breaklinks=true, urlbordercolor={0 1 0}, citebordercolor={0 0 1}]{hyperref}
+\definecolor{darkgreen}{rgb}{0,0.545,}
+\definecolor{darkyellow}{rgb}{0.933,0.604,0}
+
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!60!black},
+    citecolor={blue!60!black},
+    urlcolor={blue!60!black}
+}
+
+
+ \usepackage{setspace}
+    \makeatletter
+\def\@fnsymbol#1{\ensuremath{\ifcase#1\or \dagger\or \ddagger\or
+   \mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
+   \or \ddagger\ddagger \else\@ctrerr\fi}}
+    \makeatother
+
+% dcolumn package: table
+\usepackage{dcolumn}
+\newcolumntype{.}{D{.}{.}{-1}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+% multirow package: table
+\usepackage{multirow}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
+
+% rotating package
+\usepackage{rotating}
+
+
+% theorem package
+\usepackage{theorem}
+\theoremstyle{plain}
+\theoremheaderfont{\scshape}
+\newtheorem{theorem}{Theorem}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+\usepackage{dcolumn} 
+\usepackage{fontawesome}
+% define new commands for math
+\newcommand{\qed}{\hfill \ensuremath{\Box}}
+\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\argmin}{arg\min}
+\DeclareMathOperator{\argmax}{arg\max}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\renewcommand\r{\right}
+\renewcommand\l{\left}
+\newcommand\E{\mathbb{E}}
+\newcommand\dist{\buildrel\rm d\over\sim}
+\newcommand\iid{\stackrel{\rm i.i.d.}{\sim}}
+\newcommand\ind{\stackrel{\rm indep.}{\sim}}
+\newcommand\cov{{\rm Cov}}
+\newcommand\var{{\rm Var}}
+\newcommand\bone{\mathbf{1}}
+\newcommand\bzero{\mathbf{0}}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage{scrextend}%margins
+
+% dotted lines in tables
+\usepackage{arydshln}
+
+\usetikzlibrary{arrows.meta,
+                chains,
+                positioning,
+                shapes.geometric
+                }
+
+% spacing between sections and subsections
+\usepackage[compact]{titlesec}
+\titleformat*{\section}{\large \bfseries}
+\titleformat*{\subsection}{\normalsize \bfseries}
+\titlespacing*\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+% multiple figure control
+%\usepackage{subfigure}
+%\def\subfigcapskip{-.i2n}
+%\def\subfigtopskip{-.55in}
+%\makeatletter
+%\renewcommand*{\@fnsymbol}[1]{\ensuremath{\ifcase#1\or \dagger\or \ddagger\or
+   % \mathsection\or *\or \|\or **\or \dagger\dagger
+    %\or \ddagger\ddagger \else\@ctrerr\fi}}
+%\makeatother
+
+
+% side by side graphics
+\usepackage{graphicx}
+\usepackage{subfig}
+% allow page break within math environments
+\allowdisplaybreaks[4]
+
+
+\renewcommand{\footnotesize}{\normalsize}
+\newcommand{\note}[1]{\footnote{\doublespacing #1}} 
+
+
+
+\begin{document}
+
+%\title{\Large{\textbf{Prejudice Reduction At Scale:\\}
+%{\emph{How Institutional Inclusion Reduces Social Exclusion}}}}
+
+%\textit{\textbf{Word Count:}} 
+
+%\date{\today\\}
+
+
+%\maketitle
+
+\begin{center}
+\singlespace
+\large{\textbf{Prejudice Reduction at Scale:}\\
+\emph{How Institutional Inclusion Reduces Social Exclusion}}\\
+\doublespacing
+
+\normalsize{
+\begin{singlespace}
+\textbf{Chagai M. Weiss}\\
+Postdoctoral Fellow, \\
+The Stanford King Center Conflict and Polarization Lab\\
+Stanford University\\
+\href{cmweiss@stanford.edu}{\texttt{cmweiss@stanford.edu}}
+\end{singlespace}}
+\end{center}
+\onehalfspacing
+
+
+
+\section*{Brief Description}
+\emph{Prejudice Reduction at Scale} explains how minority inclusion in public institutions improves intergroup relations in divided societies. I argue that public institutions---such as schools, hospitals, and police forces---that employ minority service providers in visible and reputable positions can reduce mass prejudice towards minorities in two distinct ways. First, inclusionary institutions facilitate meaningful interactions between majority citizens and minority service providers, emphasizing the benefits of intergroup complementarity and cooperation. Second, inclusionary institutions signal to majority group members that minorities are credibly committed to contributing to a common good through participating in reputable institutions. 
+
+To situate and test my argument, I mostly focus on Palestinian Citizens of Israel (hereafter PCI) inclusion in Israeli public institutions and the effects of such inclusion on Jewish-Israeli prejudice and preferences of social exclusion towards PCIs. After elaborating on the nature of prejudice in Israel and explaining the unexpected rise of PCI inclusion within Israeli public institutions since the early 2000s, I test my main argument through a series of natural and survey experiments. My various studies demonstrate how brief yet meaningful interactions with PCI service providers reduce Jewish Israelis' prejudice towards PCIs and how even absent direct interactions, information about the rate of PCI inclusion in Israeli institutions further reduces intergroup animosity. \emph{Prejudice Reduction at Scale} reveals how public institutions and the people within them can meaningfully shape intergroup relations in divided societies. 
+
+
+\section*{Full Description}
+Prejudice, conceptualized as ``an antipathy based on a faulty and inflexible generalization" \citep[p. 9]{Allport1954}, is a major cause of discrimination and an impediment to intergroup cooperation around the world \citep{Enos:2018aa,Peyton:2021aa}. A global consensus over the social importance of reducing prejudice \citep{UNIES:2006tx}, has motivated a century of research across the social sciences exploring the nature of prejudice \citep{Allport1954,Fiske:1998aa}, and the paths to reduce it \citep{Paluck:2020aa}. \emph{Prejudice Reduction at Scale} lays out a novel institutional approach for prejudice reduction.
+
+
+%Acknowledging the important role of institutions in providing citizens with ``coordinative, normative, and informational micro-foundations of behavior" \cite[p. 15]{Greif:2006vz}, \emph{Prejudice Reduction at Scale} lays out a novel institutional approach for prejudice reduction. 
+
+
+%%Acknowledging the dangers of intergroup animosity, in 1965 the United Nations \citep{UNIES:2006tx} declared the elimination of prejudice and racism as a global priority. 
+
+%interrelated but distinct components, particularly rules, beliefs, and norms, which sometimes manifest themselves as organizations. These institutional elements are exogenous to each individual whose behavior they influence. They provide individuals with the cognitive, coordinative, normative, and informational microfoundations of behavior as they enable, guide, and motivate them to follow specific behavior. Greif book
+
+
+I broadly conceptualize institutions as a system of rules, beliefs, and norms that manifests in organizations \citep{Greif:2006vz}, and focus on a component of this system: public institutions, which I define as ``organizations that provide societal goods for citizens." Scholarly interest in prejudice was initially motivated, to a great extent, by institutional changes in the U.S. relating to the desegregation of schools and military units \citep{Allport1954}. However, with the exception of research on descriptive representation in electoral institutions \citep{Chauchard:2014aa,Chauchard:2017aa}, most prominent frameworks for prejudice reduction today rarely engage with the role of public institutions in shaping intergroup relations in divided societies and tend to focus on light-touch, one-shot, grassroots psychological interventions \citep{Paluck:2020aa}.%\footnote{A related literature considers the effects of electoral quotas and representation on intergroup relations, yielding mixed results \citep{Chauchard:2014aa,Chauchard:2017aa,Grossman:2021vu,Grossman:2021aa}.} 
+
+
+The theoretical starting point of \emph{Prejudice Reduction at Scale} is that it is crucial to think about the role of public institutions when studying prejudice reduction for three main reasons. First, public institutions provide citizens with information that enables and guides behavior \citep{Greif:2006vz}. In turn, institutions can shape group identity and intergroup relations \citep{Posner:2005vn}. Second, public institutions provide meaningful services to a broad range of citizens \citep{Pepinsky:2017aa} and are well-situated to socialize the masses and influence not only tolerant individuals but more importantly prejudicial citizens who tend to avoid intergroup interactions and dialogue. Third, institutions can be reinforcing \citep{Greif:2004uz}, and relatively stable over time \citep{Thelen:1999wi}, and if designed correctly, they can facilitate recurring, scalable, cost-effective dynamics that are favorable for intergroup relations. 
+
+
+Motivated by these insights, I develop a theory of prejudice reduction through public institutions, which combines institutional and psychological perspectives. I elaborate on two central ways in which minority inclusion in the ranks of public institutions can reduce prejudice in divided societies. First, I argue that public institutions that employ minority service providers in visible and reputable positions facilitate recurring interactions between minority service providers and majority citizens, which emphasize the value of intergroup complementarity and cooperation \citep{Jha:2013aa,Jha:2022wp}. For example, inclusionary healthcare systems generate daily interactions between majority patients and minority doctors, and inclusionary education systems connect majority students with minority teachers. In these instances, majority-group members engage in a unique form of intergroup contact \citep{Allport1954}, in which they receive vital services from highly professionalized, high-status, respected minorities, an experience that, I argue, can lead to prejudice reduction. 
+
+
+Second, I argue that even absent direct interactions with minority service providers, inclusionary institutions can reduce prejudice because they signal information about minorities' participation in reputable institutions and contribution to the common good. In divided societies, minorities are wrongly viewed as a fifth column or societal burden \citep{Bracic:2020ud,Lajevardi:2020aa}. Therefore, learning that minorities are employed in public institutions serves to disconfirm misperceptions, shape beliefs about minorities' contributions to society, and reduce prejudice.
+
+
+My theory of prejudice reduction through public institutions applies to a broad range of contexts with deep societal divides and reputable, established institutions. However, most of the empirics in \emph{Prejudice Reduction at Scale} focus on Jewish-Israeli prejudice towards PCIs and its response to PCI inclusion in public institutions. The empirical component of the book begins with two descriptive chapters. First, I provide a historical overview of intergroup relations in Israel, emphasizing the importance of Israel for scholars of prejudice. In light of this overview, I document the puzzling pattern of minority inclusion in Israeli public institutions since the early 2000s and explain the political economy rationale leading center and right-wing governments to promote PCI inclusion in public institutions. 
+
+
+After contextualizing prejudice and institutional inclusion in Israel, I test the observable implications of my theory through a series of novel experiments. Using a natural experiment in over 20 clinics across Israel, I show that Jewish patients receiving medical care from PCI (rather than Jewish) doctors report lower levels of prejudice. I then report results from a survey experiment showing that even absent direct interactions, Jewish Israelis that learn about rates of PCI inclusion in healthcare report lower levels of prejudice towards PCIs. I bolster the generalizability of these findings through a final set of experiments implemented in Israel and the U.S., demonstrating that similar patterns of prejudice reduction emerge when focusing on other institutions and countries. 
+
+\emph{Prejudice Reduction at Scale} makes two major contributions to ongoing research and public conversations on prejudice in divided societies and diversity and inclusion in public institutions. First, scholars and practitioners are increasingly interested in developing promising programs and interventions to reduce prejudice toward minorities. Departing from existing trends that focus on micro-level interventions directed often at self-selecting individuals, \emph{Prejudice Reduction at Scale} encourages readers to think systematically about the institutions that are an inseparable part of our daily experiences and how minority inclusion within them can reduce prejudice in divided societies. Second, \emph{Prejudice Reduction at Scale} builds on existing research documenting how minority inclusion in public institutions yields equitable public goods provision and demonstrates an unexplored benefit of minority inclusion leading to more favorable intergroup relations. Finally, \emph{Prejudice Reduction at Scale} informs ongoing debates regarding intergroup dynamics within the Israeli state and the potential of institutional inclusion to reduce PCI social exclusion.
+
+
+\section*{Proposed Chapter Outline}
+\begin{enumerate}
+\item \textbf{Introduction:} I motivate \emph{Prejudice Reduction at Scale} by describing high-profile manifestations of prejudice towards PCIs in Israel in recent years, which I complement with cross-national data from the World Values Survey documenting the prevalence of prejudice around the world. Emphasizing the adverse consequences of prejudice, as well as its prevalence, I introduce the main objective of the book: developing and testing an institutional framework for prejudice reduction. After motivating the book, I define core concepts (i.e., prejudice, social distance, public institutions), lay out the main argument alongside an overview of the evidence, and provide a roadmap of chapters.
+
+
+
+%Together, these data emphasize the disturbing and normatively problematic nature of prejudice, as well as its prevalence around the world, 
+
+%The disturbing descriptions of prejudice towards PCIs in Israel, alongside the depicted prevalence of prejudice cross-nationally, motivate the importance of 
+% patterns of data emphasize the adverse nature of prejudice, as
+
+
+
+\item \textbf{A Theory of Prejudice Reduction through Public Institutions:} This chapter lays out the theoretical argument of the manuscript explaining how minority inclusion in public institutions reduces majority group members' prejudice towards minorities. The chapter begins by overviewing what we know about prejudice and how to reduce it. This overview emphasizes the limited attention allocated to public institutions as a vehicle for meaningful social change and makes a case for my focus on public institutions and prejudice. Then, in light of my argument regarding the importance of public institutions, I describe how inclusionary institutions can reduce prejudice by facilitating meaningful interactions between majority citizens and minority service providers and by signaling to majority group members that minorities are credibly committed to contributing to a common good through their participation in reputable institutions. Finally, I conclude the chapter by listing a series of hypotheses to be tested throughout the manuscript, as well as three central scope conditions. 
+
+
+
+\item \textbf{The Nature of Prejudice in Israel:} In this chapter, I provide a historical account of intergroup relations between Jewish Israelis and Palestinian citizens of Israel. Drawing on various secondary sources, I trace the development of a complicated relationship between PCIs and the Israeli state. I document the centrality of institutional exclusion as a central component of Palestinian life in the Israeli state and describe how the ongoing intractable conflict between the Israeli state and Palestinians in the West Bank and Gaza influenced PCI's relations with the Israeli state and its Jewish citizens. My overview, which emphasizes institutional exclusion and violent intractable conflict as defining features of intergroup relations in Israel, suggests that prejudice in the Israeli context would be prevalent, stable, and hard to reduce. Presenting over 20 years of public opinion data, I trace the stability of preferences for exclusion among the Israeli Jewish public and explore the correlates of prejudice with meaningful social and political attributes. I conclude the chapter by explaining why Israel, a context of extreme intolerance and stable preferences for exclusion, is essential for learning about prejudice reduction and a suitable context for testing my theory of prejudice reduction through public institutions.
+
+
+\item \textbf{The Unexpected Rise of Inclusion in Israeli Institutions:} In light of the previous chapter that emphasizes the severity and prevalence of prejudice in Israel, this chapter begins with a puzzling question: why would politicians and bureaucrats representing majority group members in divided societies like Israel allow for minority inclusion in public institutions? To answer this question, I lay out a framework that emphasizes instrumental and normative motivations for inclusion. I then report data on inclusion in Israeli public institutions since the early 2000s, demonstrating the slow and steady rise of PCI inclusion within Israeli public institutions, primarily driven by hiring junior employees in a select set of institutions, including health and education. These patterns emphasize that even in deeply divided societies like Israel, minority inclusion in public institutions often emerges. In the remainder of the chapter, I analyze historical records, governmental and NGO reports, and secondary sources to explain the rise of institutional inclusion in Israel. I argue that a series of narrow legislations and court rulings during the 1990s raised the initial salience of minority inclusion as a normatively important policy that promotes equality. But ultimately, instrumental motivations to leverage PCI's human capital and strengthen their attachment to the state have motivated center and right-wing governments to use a range of policies to diversify Israeli public institutions. My analyses emphasize the complementarity of normative and instrumental motivations in promoting challenging, albeit societally beneficial, policy reforms.
+
+
+
+\item \textbf{Palestinian Doctors, Jewish Patients, and Prejudice Reduction:} Acknowledging the prevalence of prejudice in Israel, and the surprising rise of PCI institutional inclusion in recent years, this chapter returns to my theory of prejudice reduction through public institutions to test the first component of my argument. I begin the chapter by recapping my expectation that meaningful interactions between minority service providers and majority citizens can reduce prejudice and emphasize the inferential challenges of identifying the effects of such interactions. In the remainder of the chapter, I describe a natural field experiment I implemented in collaboration with a chain of Israeli medical clinics operating in over 20 locations across Israel.\footnote{This chapter is based on and extends the evidence from \citet{Weiss:2021aa}, published in the Proceedings of the National Academy of Sciences: \href{https://doi.org/10.1073/pnas.2022634118}{https://doi.org/10.1073/pnas.2022634118}.} In this experiment, I leverage the random assignment of patients to doctors within clinics, as well as access to de-identified medical records, and a treatment evaluation survey, to identify the effects of receiving medical care from a PCI (rather than a Jewish) doctor, on Jewish Israeli prejudice towards PCIs. I show that Jewish patients receiving medical care from PCI doctors report lower prejudice towards the PCI community 1-10 days after their interaction. Moreover, these effects appear for patients with varying political preferences, regardless of whether they have encountered a PCI doctor in the past. The evidence in this chapter emphasizes how public institutions can facilitate recurring interactions between majority group members and minorities in influential and reputable positions centered around complementarity and cooperation and favorable for prejudice reduction. 
+
+%meaningful interactions between majority citizens and minority service providers, which emphasize the benefits of intergroup complementarity and cooperation
+
+\item \textbf{Information Signals of Inclusion and Prejudice Reduction:} In light of the evidence reported from my natural experiment, this chapter demonstrates that even absent direct interactions, inclusionary institutions can reduce prejudice by providing novel information signals. At the start of the chapter, I recap the second component of my theory, that inclusionary institutions provide majority group members with information regarding how minorities are credibly committed to contributing to a common good through their participation in reputable public institutions, and why this information is especially important in divided societies where minorities are often viewed as a fifth column or societal burden. I then describe a survey experiment that I implemented in Israel at the height of the first wave of COVID-19. In the experiment, I provided Jewish Israeli survey respondents with brief information regarding the share of PCIs working in healthcare institutions. Later in the survey, I elicited respondents' prejudice toward multiple social groups in Israel. My results from this experiment demonstrate that information about rates of minority inclusion reduces majority group members' prejudice towards minorities. 
+
+
+
+\item \textbf{Generalizability and Scope Conditions:} Chapters 5-6 take a deep dive into the context of PCI inclusion in Israeli healthcare institutions to provide rigorous evidence supporting the underlying arguments of my theory of prejudice reduction through public institutions. After providing strong evidence supporting my theory, I consider its generalizability through a series of additional studies and extensions. First, I show that my argument extends beyond the healthcare context to other institutions providing public goods for Israeli citizens. Second, I show that similar patterns of prejudice reduction emerge in a survey experiment implemented in the U.S. focusing on Muslim inclusion in U.S. healthcare institutions. Finally, extending evidence from Chapter 5, I consider the limits of inclusion and the importance of service provider status by demonstrating that interactions with lower-status providers that do not provide patients with diagnoses and treatment plans do not reduce prejudice. I am currently considering adding two additional studies to this chapter, examining whether affirmative action shapes the relationship between institutional inclusion and prejudice reduction and exploring cross-national support for my theory.
+
+\item \textbf{Conclusion:} In this chapter, I summarize my central arguments and link each component of my theory with relevant evidence reported throughout the book. After doing so, I elaborate on my contributions to the literature on prejudice reduction and diversity and inclusion in public institutions and delineate the implications of my evidence for intergroup relations in Israel and beyond. Finally, I conclude by describing unexplored mechanisms through which minority inclusion in public institutions might affect intergroup relations in divided societies and lay out a series of priorities for a research agenda on the links between institutions and intergroup relations around the world.
+
+\item \textbf{Appendix:} The appendix will include technical information about all experiments and surveys reported in the book and supplemental analyses relevant to interested and technically inclined readers.  
+
+\end{enumerate}
+
+
+\clearpage
+
+
+
+\begin{singlespace}
+ \bibliographystyle{apsr}
+%\bibliographystyle{econometrica}
+\bibliography{book.bib}
+\end{singlespace}
+
+
+\end{document}
