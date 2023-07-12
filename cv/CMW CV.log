@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  23 JUN 2023 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  11 JUL 2023 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -827,26 +827,15 @@ ol-ogy -- PCIR Lab\OT1/ptm/m/n/10.95 , \OT1/ptm/b/n/10.95 Har-vard\OT1/ptm/m/n/
  []
 
 
-Overfull \hbox (17.0564pt too wide) in paragraph at lines 548--549
-\OT1/ptm/m/n/10.95 Louis, sched-uled), APSA (Mon-treal, sched-uled), Toronto Po
--lit-i-cal Be-hav-ior Work-shop (Toronto,
- []
-
-
-Overfull \hbox (15.77364pt too wide) in paragraph at lines 550--551
+Overfull \hbox (15.77364pt too wide) in paragraph at lines 553--554
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : APSA (Seat-tle), Pol-Meth Eu-rope
  (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
  []
 
 [3]
-Overfull \hbox (3.65285pt too wide) in paragraph at lines 554--555
+Overfull \hbox (3.65285pt too wide) in paragraph at lines 557--558
 \OT1/ptm/m/n/10.95 (Toronto), MPSA (Chicago), Po-lit-i-cal Psy-chol-ogy APSA Pr
 e-Conference (Wash-ing-ton D.C.),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 642--644
-
  []
 
 
@@ -854,59 +843,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 645--647
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--650
+
+ []
+
 [4]
-Overfull \hbox (14.7016pt too wide) in paragraph at lines 651--652
+Overfull \hbox (14.7016pt too wide) in paragraph at lines 654--655
 \OT1/ptm/m/it/10.95 Re-view, Cam-bridge Uni-ver-sity Press (El-e-ments in Ex-pe
 r-i-men-tal Po-lit-i-cal Sci-ence), Com-par-a-tive
  []
 
 
-Overfull \hbox (19.0714pt too wide) in paragraph at lines 651--652
+Overfull \hbox (19.0714pt too wide) in paragraph at lines 654--655
 \OT1/ptm/m/it/10.95 Opin-ion and Par-ties, Jour-nal of Ex-per-i-men-tal Po-lit-
 i-cal Sci-ence, Jour-nal of Hos-pi-tal Man-age-ment
  []
 
 
-Overfull \hbox (1.28818pt too wide) in paragraph at lines 651--652
+Overfull \hbox (1.28818pt too wide) in paragraph at lines 654--655
 \OT1/ptm/m/it/10.95 Quar-terly, Po-lit-i-cal Stud-ies, Pub-lic Ad-min-is-tra-ti
 on, Quar-terly Jour-nal of Eco-nomics, Sci-ence
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--652
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 653--654
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 655.
+Package xcolor Warning: Incompatible color definition on input line 658.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--672
+Underfull \hbox (badness 10000) in paragraph at lines 658--675
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 679.
+Package xcolor Warning: Incompatible color definition on input line 682.
 
 
-Package xcolor Warning: Incompatible color definition on input line 681.
+Package xcolor Warning: Incompatible color definition on input line 684.
 
 
-Package xcolor Warning: Incompatible color definition on input line 702.
+Package xcolor Warning: Incompatible color definition on input line 705.
 
 
-Package xcolor Warning: Incompatible color definition on input line 702.
+Package xcolor Warning: Incompatible color definition on input line 705.
 
 
-Package xcolor Warning: Incompatible color definition on input line 717.
+Package xcolor Warning: Incompatible color definition on input line 720.
 
 
-Package xcolor Warning: Incompatible color definition on input line 717.
+Package xcolor Warning: Incompatible color definition on input line 720.
 
 
 AED: lastpage setting LastPage
@@ -929,7 +923,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (5 pages, 101524 bytes).
+Output written on "CMW CV.pdf" (5 pages, 101548 bytes).
 PDF statistics:
  202 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams
