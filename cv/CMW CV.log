@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  19 JUL 2023 09:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  2 AUG 2023 10:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -866,15 +866,15 @@ f Elec-tions, Na-tional Sci-ence Foun-da-tion,
  []
 
 
-Overfull \hbox (10.00507pt too wide) in paragraph at lines 655--656
-\OT1/ptm/m/it/10.95 Man-age-ment and Health Pol-icy, Jour-nal of Pol-i-tics, Lo
--cal Gov-ern-ment Stud-ies, Or-ga-ni-za-tional
+Overfull \hbox (24.37164pt too wide) in paragraph at lines 655--656
+\OT1/ptm/m/it/10.95 Man-age-ment and Health Pol-icy, Jour-nal of Peace Re-searc
+h, Jour-nal of Pol-i-tics, Lo-cal Gov-ern-ment
  []
 
 
-Overfull \hbox (7.89104pt too wide) in paragraph at lines 655--656
-\OT1/ptm/m/it/10.95 Re-search Quar-terly, Po-lit-i-cal Stud-ies, Pub-lic Ad-min
--is-tra-tion, Quar-terly Jour-nal of Eco-nomics,
+Overfull \hbox (0.81752pt too wide) in paragraph at lines 655--656
+\OT1/ptm/m/it/10.95 Ge-og-ra-phy, Po-lit-i-cal Re-search Quar-terly, Po-lit-i-c
+al Stud-ies, Pub-lic Ad-min-is-tra-tion, Quar-terly
  []
 
 
@@ -910,9 +910,6 @@ Package xcolor Warning: Incompatible color definition on input line 727.
 
 AED: lastpage setting LastPage
 [5] (./CMW CV.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
 (rerunfilecheck)             Checksum: C775C5DF0B59E0FEFB2444206D725D83;2142.
  ) 
@@ -923,7 +920,7 @@ Here is how much of TeX's memory you used:
  31281 multiletter control sequences out of 15000+600000
  490631 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,1003b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,13n,80p,1030b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -931,7 +928,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (5 pages, 101721 bytes).
+Output written on "CMW CV.pdf" (5 pages, 101761 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  186 compressed objects within 2 object streams
