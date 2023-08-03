@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  2 AUG 2023 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  3 AUG 2023 11:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -766,6 +766,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 439--440
 
  []
 
+
+Package xcolor Warning: Incompatible color definition on input line 448.
+
 [2]
 
 Package xcolor Warning: Incompatible color definition on input line 503.
@@ -841,7 +844,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 646--648
 
  []
 
-[4]
+
 Overfull \hbox (13.31148pt too wide) in paragraph at lines 655--656
 []\OT1/ptm/b/n/10.95 Referee: \OT1/ptm/m/it/10.95 Amer-i-can Jour-nal of Po-lit
 -i-cal Sci-ence, Amer-i-can Po-lit-i-cal Sci-ence Re-view, Cam-bridge
@@ -877,6 +880,7 @@ Overfull \hbox (0.81752pt too wide) in paragraph at lines 655--656
 al Stud-ies, Pub-lic Ad-min-is-tra-tion, Quar-terly
  []
 
+[4]
 
 Package xcolor Warning: Incompatible color definition on input line 659.
 
@@ -928,10 +932,10 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (5 pages, 101761 bytes).
+Output written on "CMW CV.pdf" (5 pages, 101808 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
