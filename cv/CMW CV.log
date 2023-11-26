@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  10 NOV 2023 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  25 NOV 2023 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -748,23 +748,23 @@ tm/m/n/10.95 & Dan Miodownik. ``[][]Ge-ogra-phies of Vi-o-lence in Jerusalem:
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 435.
+Package xcolor Warning: Incompatible color definition on input line 434.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--436
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 437.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 438.
-
-
-Package xcolor Warning: Incompatible color definition on input line 443.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 443--444
-
- []
+Package xcolor Warning: Incompatible color definition on input line 440.
 
 [2]
 
@@ -838,24 +838,24 @@ ol-ogy -- PCIR Lab\OT1/ptm/m/n/10.95 , \OT1/ptm/b/n/10.95 Har-vard\OT1/ptm/m/n/
 10.95 , \OT1/ptm/m/it/10.95 De-part-ment
  []
 
-
+[3]
 Overfull \hbox (15.77364pt too wide) in paragraph at lines 560--561
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : APSA (Seat-tle), Pol-Meth Eu-rope
  (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
  []
 
-[3]
+
 Overfull \hbox (3.65285pt too wide) in paragraph at lines 564--565
 \OT1/ptm/m/n/10.95 (Toronto), MPSA (Chicago), Po-lit-i-cal Psy-chol-ogy APSA Pr
 e-Conference (Wash-ing-ton D.C.),
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 652--654
 
  []
 
-[4]
+
 Overfull \hbox (13.31148pt too wide) in paragraph at lines 661--662
 []\OT1/ptm/b/n/10.95 Referee: \OT1/ptm/m/it/10.95 Amer-i-can Jour-nal of Po-lit
 -i-cal Sci-ence, Amer-i-can Po-lit-i-cal Sci-ence Re-view, Cam-bridge
@@ -909,13 +909,14 @@ Package xcolor Warning: Incompatible color definition on input line 718.
 
 Package xcolor Warning: Incompatible color definition on input line 718.
 
+[5]
 
 Package xcolor Warning: Incompatible color definition on input line 733.
 
 
 Package xcolor Warning: Incompatible color definition on input line 733.
 
-[5] 
+
 AED: lastpage setting LastPage
 [6] (./CMW CV.aux)
 Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
@@ -928,7 +929,7 @@ Here is how much of TeX's memory you used:
  31282 multiletter control sequences out of 15000+600000
  492260 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,1058b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,13n,80p,1058b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -937,7 +938,7 @@ ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 110289 bytes).
+Output written on "CMW CV.pdf" (6 pages, 110408 bytes).
 PDF statistics:
  217 PDF objects out of 1000 (max. 8388607)
  193 compressed objects within 2 object streams
