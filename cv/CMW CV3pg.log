@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  30 NOV 2023 09:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  20 DEC 2023 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"CMW CV.tex"
-(./CMW CV.tex
+**"CMW CV3pg.tex"
+(./CMW CV3pg.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -432,8 +432,8 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box55
 )
-(./CMW CV.aux)
-\openout1 = `"CMW CV.aux"'.
+(./CMW CV3pg.aux)
+\openout1 = `"CMW CV3pg.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 240.
 LaTeX Font Info:    ... okay on input line 240.
@@ -521,9 +521,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 240.
 LaTeX Info: Redefining \pageref on input line 240.
 LaTeX Info: Redefining \nameref on input line 240.
- (./CMW CV.out) (./CMW CV.out)
+ (./CMW CV3pg.out) (./CMW CV3pg.out)
 \@outlinefile=\write4
-\openout4 = `"CMW CV.out"'.
+\openout4 = `"CMW CV3pg.out"'.
 
 \rcollength=\skip72
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
@@ -815,121 +815,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 513--514
 Package xcolor Warning: Incompatible color definition on input line 515.
 
 
-Package xcolor Warning: Incompatible color definition on input line 534.
-
-
-Package xcolor Warning: Incompatible color definition on input line 535.
-
-
-Package xcolor Warning: Incompatible color definition on input line 536.
-
-
-Overfull \hbox (1.47554pt too wide) in paragraph at lines 543--545
+Overfull \hbox (1.47554pt too wide) in paragraph at lines 534--536
 \OT1/ptm/m/it/10.95 Po-lar-iza-tion and So-cial Change Lab\OT1/ptm/m/n/10.95 , 
 \OT1/ptm/b/n/10.95 WashU\OT1/ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 10th Com-par-a
 -tive Pol-i-tics An-nual Con-fer-ence\OT1/ptm/m/n/10.95 ,
  []
 
 
-Overfull \hbox (23.99847pt too wide) in paragraph at lines 548--549
+Overfull \hbox (23.99847pt too wide) in paragraph at lines 539--540
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : \OT1/ptm/b/n/10.95 He-brew Uni-ve
 r-sity \OT1/ptm/m/n/10.95 (Is-rael), \OT1/ptm/m/it/10.95 De-part-ment of Psy-ch
 ol-ogy -- PCIR Lab\OT1/ptm/m/n/10.95 , \OT1/ptm/b/n/10.95 Har-vard\OT1/ptm/m/n/
 10.95 , \OT1/ptm/m/it/10.95 De-part-ment
  []
 
-[3]
-Overfull \hbox (15.77364pt too wide) in paragraph at lines 560--561
-[]\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : APSA (Seat-tle), Pol-Meth Eu-rope
- (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
- []
+
+Package xcolor Warning: Incompatible color definition on input line 549.
 
 
-Overfull \hbox (3.65285pt too wide) in paragraph at lines 564--565
-\OT1/ptm/m/n/10.95 (Toronto), MPSA (Chicago), Po-lit-i-cal Psy-chol-ogy APSA Pr
-e-Conference (Wash-ing-ton D.C.),
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 652--654
-
- []
+Package xcolor Warning: Incompatible color definition on input line 551.
 
 
-Overfull \hbox (13.31148pt too wide) in paragraph at lines 661--662
-[]\OT1/ptm/b/n/10.95 Referee: \OT1/ptm/m/it/10.95 Amer-i-can Jour-nal of Po-lit
--i-cal Sci-ence, Amer-i-can Po-lit-i-cal Sci-ence Re-view, Cam-bridge
- []
-
-
-Overfull \hbox (3.40088pt too wide) in paragraph at lines 661--662
-\OT1/ptm/m/it/10.95 Uni-ver-sity Press (El-e-ments in Ex-per-i-men-tal Po-lit-i
--cal Sci-ence), Com-par-a-tive Po-lit-i-cal Stud-ies,
- []
-
-
-Overfull \hbox (16.1697pt too wide) in paragraph at lines 661--662
-\OT1/ptm/m/it/10.95 Con-flict Man-age-ment and Peace Sci-ence, Con-flict Res-o-
-lu-tion Quar-terly, Eth-nop-o-l-i-tics, Fron-tiers
- []
-
-
-Overfull \hbox (2.26326pt too wide) in paragraph at lines 661--662
-\OT1/ptm/m/it/10.95 Quar-terly, Jour-nal of Con-flict Res-o-lu-tion, Jour-nal o
-f Elec-tions, Na-tional Sci-ence Foun-da-tion,
- []
-
-
-Overfull \hbox (24.37164pt too wide) in paragraph at lines 661--662
-\OT1/ptm/m/it/10.95 Man-age-ment and Health Pol-icy, Jour-nal of Peace Re-searc
-h, Jour-nal of Pol-i-tics, Lo-cal Gov-ern-ment
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 665.
-
-
-Package xcolor Warning: Incompatible color definition on input line 685.
-
-
-Package xcolor Warning: Incompatible color definition on input line 687.
-
-
-Package xcolor Warning: Incompatible color definition on input line 689.
-
-
-Package xcolor Warning: Incompatible color definition on input line 710.
-
-
-Package xcolor Warning: Incompatible color definition on input line 710.
-
-
-Package xcolor Warning: Incompatible color definition on input line 718.
-
-
-Package xcolor Warning: Incompatible color definition on input line 718.
-
-[5]
-
-Package xcolor Warning: Incompatible color definition on input line 733.
-
-
-Package xcolor Warning: Incompatible color definition on input line 733.
+Package xcolor Warning: Incompatible color definition on input line 553.
 
 
 AED: lastpage setting LastPage
-[6] (./CMW CV.aux)
-Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
-(rerunfilecheck)             Checksum: C775C5DF0B59E0FEFB2444206D725D83;2142.
+[3] (./CMW CV3pg.aux)
+Package rerunfilecheck Info: File `"CMW CV3pg".out' has not changed.
+(rerunfilecheck)             Checksum: 7DCD0E2768CC248F1C237E8934369754;1241.
  ) 
 Here is how much of TeX's memory you used:
- 13299 strings out of 478268
- 202909 string characters out of 5846347
- 521017 words of memory out of 5000000
- 31282 multiletter control sequences out of 15000+600000
+ 13276 strings out of 478268
+ 202690 string characters out of 5846347
+ 521032 words of memory out of 5000000
+ 31271 multiletter control sequences out of 15000+600000
  492260 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,1058b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,13n,80p,562b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -938,10 +860,10 @@ ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 110641 bytes).
+Output written on "CMW CV3pg.pdf" (3 pages, 100730 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 157 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 14 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
