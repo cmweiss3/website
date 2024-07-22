@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  20 DEC 2023 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  22 JUL 2024 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -638,73 +638,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--369
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 370.
+Package xcolor Warning: Incompatible color definition on input line 371.
 
 
-Overfull \hbox (2.20842pt too wide) in paragraph at lines 370--371
-\OT1/ptm/m/n/10.95 pro-grams can re-duce prej-u-dice to-wards Out-groups in Is-
-rael.[][]" \OT1/ptm/m/it/10.95 The Pro-ceed-ings of the Na-tional
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
+
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 376.
+Package xcolor Warning: Incompatible color definition on input line 373.
+
+
+Overfull \hbox (2.20842pt too wide) in paragraph at lines 373--374
+\OT1/ptm/m/n/10.95 pro-grams can re-duce prej-u-dice to-wards Out-groups in Is-
+rael.[][]" \OT1/ptm/m/it/10.95 The Pro-ceed-ings of the Na-tional
+ []
 
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package xcolor Warning: Incompatible color definition on input line 381.
+Package xcolor Warning: Incompatible color definition on input line 379.
 
 
-Overfull \hbox (1.50829pt too wide) in paragraph at lines 381--382
+Package xcolor Warning: Incompatible color definition on input line 384.
+
+
+Overfull \hbox (1.50829pt too wide) in paragraph at lines 384--385
 []\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 , Alexan-dra Siegel, &
  David Rom-ney ``[][]How Threats of Ex-clu-sion Mo-bi-lize
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 383.
+Package xcolor Warning: Incompatible color definition on input line 386.
 
 
-Overfull \hbox (0.78442pt too wide) in paragraph at lines 383--384
+Overfull \hbox (0.78442pt too wide) in paragraph at lines 386--387
 \OT1/ptm/m/n/10.95 ``[][]Ab-strac-tion and De-tail in Ex-per-i-men-tal De-sign.
 [][]" \OT1/ptm/m/it/10.95 The Amer-i-can Jour-nal of Po-lit-i-cal Sci-ence\OT1/
 ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 385.
+Package xcolor Warning: Incompatible color definition on input line 388.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 387.
-
-
-Overfull \hbox (3.18417pt too wide) in paragraph at lines 387--388
-[]\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 , Neal Tsur, Dan Miodo
-wnik, Yonatan Lupu, and Evgeny Finkel. ``[][]Atyp-i-cal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
 
 Package xcolor Warning: Incompatible color definition on input line 390.
+
+
+Overfull \hbox (3.18417pt too wide) in paragraph at lines 390--391
+[]\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 , Neal Tsur, Dan Miodo
+wnik, Yonatan Lupu, and Evgeny Finkel. ``[][]Atyp-i-cal
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 390--391
@@ -715,114 +715,124 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--391
 Package xcolor Warning: Incompatible color definition on input line 393.
 
 
-Package xcolor Warning: Incompatible color definition on input line 398.
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
 
 
-Overfull \hbox (11.47186pt too wide) in paragraph at lines 398--399
+Package xcolor Warning: Incompatible color definition on input line 396.
+
+
+Package xcolor Warning: Incompatible color definition on input line 401.
+
+
+Overfull \hbox (11.47186pt too wide) in paragraph at lines 401--402
 \OT1/ptm/m/n/10.95 Af-fec-tive Po-lar-iza-tion: Ev-i-dence from Nat-u-ral and S
 ur-vey Ex-per-i-ments in Is-rael.[][]" \OT1/ptm/m/it/10.95 Com-par-a-tive
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 404.
+Package xcolor Warning: Incompatible color definition on input line 407.
 
 
-Overfull \hbox (5.24118pt too wide) in paragraph at lines 404--405
+Overfull \hbox (5.24118pt too wide) in paragraph at lines 407--408
 []\OT1/ptm/m/n/10.95 Gilad, Sharon, Saar Alon-Barkat & \OT1/ptm/b/n/10.95 Cha-g
 ai M. Weiss\OT1/ptm/m/n/10.95 . ``[][]Po-lit-i-cal and Bu-reau-cratic Trans-la-
 tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 406.
+Package xcolor Warning: Incompatible color definition on input line 409.
 
 
-Overfull \hbox (9.81885pt too wide) in paragraph at lines 406--407
+Overfull \hbox (9.81885pt too wide) in paragraph at lines 409--410
 []\OT1/ptm/m/n/10.95 Rock, Jonathan, \OT1/ptm/b/n/10.95 Cha-gai M. Weiss \OT1/p
 tm/m/n/10.95 & Dan Miodownik. ``[][]Ge-ogra-phies of Vi-o-lence in Jerusalem:
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 434.
+Package xcolor Warning: Incompatible color definition on input line 438.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 437.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 440.
+Package xcolor Warning: Incompatible color definition on input line 441.
 
 [2]
 
-Package xcolor Warning: Incompatible color definition on input line 452.
+Package xcolor Warning: Incompatible color definition on input line 453.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
 
-Overfull \hbox (2.59167pt too wide) in paragraph at lines 454--455
+Overfull \hbox (2.59167pt too wide) in paragraph at lines 459--460
 []\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 , Don-ald Green, Robb 
 Willer. ``Can Bi-par-ti-san Elite Cam-paigns De-po-lar-ize
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 509.
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
 
 
-Overfull \hbox (10.6944pt too wide) in paragraph at lines 509--510
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 517.
+
+
+Overfull \hbox (10.6944pt too wide) in paragraph at lines 517--518
 \OT1/ptm/m/n/10.95 De-cen-tral-iza-tion in the MENA: Pro-cesses, Out-comes, and
  Ob-sta-cles.[][]" \OT1/ptm/m/it/10.95 Pro-gram on Gov-er-nance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 511.
+Package xcolor Warning: Incompatible color definition on input line 519.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--512
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 513.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 513--514
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 515.
+Package xcolor Warning: Incompatible color definition on input line 521.
 
 
-Overfull \hbox (1.47554pt too wide) in paragraph at lines 534--536
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 523.
+
+
+Overfull \hbox (1.47554pt too wide) in paragraph at lines 542--544
 \OT1/ptm/m/it/10.95 Po-lar-iza-tion and So-cial Change Lab\OT1/ptm/m/n/10.95 , 
 \OT1/ptm/b/n/10.95 WashU\OT1/ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 10th Com-par-a
 -tive Pol-i-tics An-nual Con-fer-ence\OT1/ptm/m/n/10.95 ,
  []
 
 
-Overfull \hbox (23.99847pt too wide) in paragraph at lines 539--540
+Overfull \hbox (23.99847pt too wide) in paragraph at lines 547--548
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : \OT1/ptm/b/n/10.95 He-brew Uni-ve
 r-sity \OT1/ptm/m/n/10.95 (Is-rael), \OT1/ptm/m/it/10.95 De-part-ment of Psy-ch
 ol-ogy -- PCIR Lab\OT1/ptm/m/n/10.95 , \OT1/ptm/b/n/10.95 Har-vard\OT1/ptm/m/n/
@@ -830,28 +840,28 @@ ol-ogy -- PCIR Lab\OT1/ptm/m/n/10.95 , \OT1/ptm/b/n/10.95 Har-vard\OT1/ptm/m/n/
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 549.
+Package xcolor Warning: Incompatible color definition on input line 557.
 
 
-Package xcolor Warning: Incompatible color definition on input line 551.
+Package xcolor Warning: Incompatible color definition on input line 559.
 
 
-Package xcolor Warning: Incompatible color definition on input line 553.
+Package xcolor Warning: Incompatible color definition on input line 561.
 
-
+[3] 
 AED: lastpage setting LastPage
-[3] (./CMW CV3pg.aux)
+[4] (./CMW CV3pg.aux)
 Package rerunfilecheck Info: File `"CMW CV3pg".out' has not changed.
-(rerunfilecheck)             Checksum: 7DCD0E2768CC248F1C237E8934369754;1241.
+(rerunfilecheck)             Checksum: C88F7A9C40FF72C8A74945DE6A328474;1360.
  ) 
 Here is how much of TeX's memory you used:
- 13276 strings out of 478268
- 202690 string characters out of 5846347
+ 13279 strings out of 478268
+ 202720 string characters out of 5846347
  521032 words of memory out of 5000000
- 31271 multiletter control sequences out of 15000+600000
+ 31272 multiletter control sequences out of 15000+600000
  492260 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,562b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,13n,80p,562b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -860,10 +870,10 @@ ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on "CMW CV3pg.pdf" (3 pages, 100730 bytes).
+Output written on "CMW CV3pg.pdf" (4 pages, 101354 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 14 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 165 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 16 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
