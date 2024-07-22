@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  22 JUL 2024 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  22 JUL 2024 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -792,29 +792,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--462
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 517.
-
-
-Overfull \hbox (10.6944pt too wide) in paragraph at lines 517--518
-\OT1/ptm/m/n/10.95 De-cen-tral-iza-tion in the MENA: Pro-cesses, Out-comes, and
- Ob-sta-cles.[][]" \OT1/ptm/m/it/10.95 Pro-gram on Gov-er-nance
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 519.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
-
+Overfull \hbox (2.6681pt too wide) in paragraph at lines 465--466
+[]\OT1/ptm/m/n/10.95 Jha, Saumi-tra, Michele Han-lon, Nam-rata Kala, Ne-mit Shr
+off, & \OT1/ptm/b/n/10.95 Cha-gai M. Weiss\OT1/ptm/m/n/10.95 . ``Build-ing
  []
 
 
 Package xcolor Warning: Incompatible color definition on input line 521.
+
+
+Overfull \hbox (10.6944pt too wide) in paragraph at lines 521--522
+\OT1/ptm/m/n/10.95 De-cen-tral-iza-tion in the MENA: Pro-cesses, Out-comes, and
+ Ob-sta-cles.[][]" \OT1/ptm/m/it/10.95 Pro-gram on Gov-er-nance
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 521--522
@@ -825,30 +820,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--522
 Package xcolor Warning: Incompatible color definition on input line 523.
 
 
-Overfull \hbox (1.47554pt too wide) in paragraph at lines 542--544
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 525.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 527.
+
+
+Overfull \hbox (1.47554pt too wide) in paragraph at lines 546--548
 \OT1/ptm/m/it/10.95 Po-lar-iza-tion and So-cial Change Lab\OT1/ptm/m/n/10.95 , 
 \OT1/ptm/b/n/10.95 WashU\OT1/ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 10th Com-par-a
 -tive Pol-i-tics An-nual Con-fer-ence\OT1/ptm/m/n/10.95 ,
  []
 
 
-Overfull \hbox (23.99847pt too wide) in paragraph at lines 547--548
+Overfull \hbox (23.99847pt too wide) in paragraph at lines 551--552
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : \OT1/ptm/b/n/10.95 He-brew Uni-ve
 r-sity \OT1/ptm/m/n/10.95 (Is-rael), \OT1/ptm/m/it/10.95 De-part-ment of Psy-ch
 ol-ogy -- PCIR Lab\OT1/ptm/m/n/10.95 , \OT1/ptm/b/n/10.95 Har-vard\OT1/ptm/m/n/
 10.95 , \OT1/ptm/m/it/10.95 De-part-ment
  []
 
-
-Package xcolor Warning: Incompatible color definition on input line 557.
-
-
-Package xcolor Warning: Incompatible color definition on input line 559.
-
+[3]
 
 Package xcolor Warning: Incompatible color definition on input line 561.
 
-[3] 
+
+Package xcolor Warning: Incompatible color definition on input line 563.
+
+
+Package xcolor Warning: Incompatible color definition on input line 565.
+
+
 AED: lastpage setting LastPage
 [4] (./CMW CV3pg.aux)
 Package rerunfilecheck Info: File `"CMW CV3pg".out' has not changed.
@@ -861,7 +873,7 @@ Here is how much of TeX's memory you used:
  31272 multiletter control sequences out of 15000+600000
  492260 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,562b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,14n,80p,562b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -870,7 +882,7 @@ ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on "CMW CV3pg.pdf" (4 pages, 101354 bytes).
+Output written on "CMW CV3pg.pdf" (4 pages, 101475 bytes).
 PDF statistics:
  165 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams
