@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  7 AUG 2024 09:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  7 AUG 2024 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -942,51 +942,41 @@ Package xcolor Warning: Incompatible color definition on input line 707.
 
 Package xcolor Warning: Incompatible color definition on input line 709.
 
-[5]
-
-Package xcolor Warning: Incompatible color definition on input line 730.
-
-
-Package xcolor Warning: Incompatible color definition on input line 730.
-
-
-Package xcolor Warning: Incompatible color definition on input line 738.
-
-
-Package xcolor Warning: Incompatible color definition on input line 738.
-
-
-Package xcolor Warning: Incompatible color definition on input line 753.
-
-
-Package xcolor Warning: Incompatible color definition on input line 753.
-
-
+[5] 
 AED: lastpage setting LastPage
 [6] (./CMW CV.aux)
-Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
-(rerunfilecheck)             Checksum: 3790E1C0CD520D0F23D28D4976385C46;2261.
+
+Package rerunfilecheck Warning: File `"CMW CV".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"CMW CV".out':
+(rerunfilecheck)             Before: 3790E1C0CD520D0F23D28D4976385C46;2261
+(rerunfilecheck)             After:  6C5CF86586B1B505FA2E5E45A2122C0D;2165.
  ) 
 Here is how much of TeX's memory you used:
- 13301 strings out of 478268
- 202933 string characters out of 5846347
+ 13296 strings out of 478268
+ 202859 string characters out of 5846347
  521017 words of memory out of 5000000
- 31283 multiletter control sequences out of 15000+600000
- 492260 words of font info for 77 fonts, out of 8000000 for 9000
+ 31280 multiletter control sequences out of 15000+600000
+ 490631 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,14n,80p,1096b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 111680 bytes).
+
+pdfTeX warning (dest): name{section*.20} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on "CMW CV.pdf" (6 pages, 102453 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
+ 210 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  27 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
