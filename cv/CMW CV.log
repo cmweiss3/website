@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  19 FEB 2025 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  20 FEB 2025 17:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -769,6 +769,13 @@ tm/m/n/10.95 & Dan Miodownik. ``[][]Ge-ogra-phies of Vi-o-lence in Jerusalem:
 Package xcolor Warning: Incompatible color definition on input line 443.
 
 
+Overfull \hbox (24.04323pt too wide) in paragraph at lines 443--444
+[]\OT1/ptm/m/n/10.95 Scacco, Alexan-dra, Alexan-dra Siegel, & \OT1/ptm/b/n/10.9
+5 Cha-gai M. Weiss\OT1/ptm/m/n/10.95 . ``[][]Out-group Avoid-ance.[][]" \OT1/pt
+m/m/it/10.95 Con-di-tion-ally
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 443--444
 
  []
@@ -976,7 +983,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 103578 bytes).
+Output written on "CMW CV.pdf" (6 pages, 103582 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams
