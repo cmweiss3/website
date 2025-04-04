@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  4 APR 2025 07:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  4 APR 2025 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -790,23 +790,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 446--447
  []
 
 
-Overfull \hbox (8.34048pt too wide) in paragraph at lines 457--458
-[]\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 , Don-ald Green, Robb 
-Willer. ``Can Politi-cians De-po-lar-ize Vot-ers? Ev-i-dence
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 457--458
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 459--460
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
  []
 
@@ -876,14 +865,14 @@ Package xcolor Warning: Incompatible color definition on input line 551.
 
 Package xcolor Warning: Incompatible color definition on input line 552.
 
-[3]
+
 Overfull \hbox (1.47554pt too wide) in paragraph at lines 558--561
 \OT1/ptm/m/it/10.95 Po-lar-iza-tion and So-cial Change Lab\OT1/ptm/m/n/10.95 , 
 \OT1/ptm/b/n/10.95 WashU\OT1/ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 10th Com-par-a
 -tive Pol-i-tics An-nual Con-fer-ence\OT1/ptm/m/n/10.95 ,
  []
 
-
+[3]
 Overfull \hbox (15.77364pt too wide) in paragraph at lines 577--578
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : APSA (Seat-tle), Pol-Meth Eu-rope
  (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
@@ -951,7 +940,7 @@ Here is how much of TeX's memory you used:
  31279 multiletter control sequences out of 15000+600000
  490631 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,80p,1262b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,13n,80p,1262b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -959,7 +948,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 103761 bytes).
+Output written on "CMW CV.pdf" (6 pages, 103704 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams
