@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  4 APR 2025 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  10 APR 2025 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -902,9 +902,27 @@ Overfull \hbox (3.40088pt too wide) in paragraph at lines 683--684
  []
 
 
-Overfull \hbox (5.5587pt too wide) in paragraph at lines 683--684
-\OT1/ptm/m/it/10.95 In-ter-na-tional Stud-ies Quar-terly, Jour-nal of Con-flict
- Res-o-lu-tion, Jour-nal of Elec-tions, Na-tional
+Overfull \hbox (2.26338pt too wide) in paragraph at lines 683--684
+\OT1/ptm/m/it/10.95 Eth-nop-o-l-i-tics, Elec-toral Stud-ies, Fron-tiers in Psy-
+chol-ogy, Hu-man Right Re-view, In-ter-na-tional
+ []
+
+
+Overfull \hbox (3.7745pt too wide) in paragraph at lines 683--684
+\OT1/ptm/m/it/10.95 Elec-tions, Na-tional Sci-ence Foun-da-tion, Pub-lic Opin-i
+on and Par-ties, Jour-nal of Ex-per-i-men-tal
+ []
+
+
+Overfull \hbox (24.54628pt too wide) in paragraph at lines 683--684
+\OT1/ptm/m/it/10.95 Re-search, Jour-nal of Pol-i-tics, Lo-cal Gov-ern-ment Stud
+-ies, Na-ture Hu-man Be-hav-ior, Or-ga-ni-za-tional
+ []
+
+
+Overfull \hbox (7.97919pt too wide) in paragraph at lines 683--684
+\OT1/ptm/m/it/10.95 Per-son-al-ity Sci-ence, Strength-en-ing Democ-racy Field T
+est Grants, TESS, U.S.-Israel Bi-na-tional
  []
 
 
@@ -940,7 +958,7 @@ Here is how much of TeX's memory you used:
  31279 multiletter control sequences out of 15000+600000
  490631 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,1262b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,13n,80p,1281b,405s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -948,7 +966,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 103704 bytes).
+Output written on "CMW CV.pdf" (6 pages, 103670 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams
