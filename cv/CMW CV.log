@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  18 DEC 2025 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  31 JAN 2026 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -908,67 +908,67 @@ Overfull \hbox (1.47554pt too wide) in paragraph at lines 573--577
  []
 
 
-Overfull \hbox (15.77364pt too wide) in paragraph at lines 593--594
+Overfull \hbox (15.77364pt too wide) in paragraph at lines 594--595
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : APSA (Seat-tle), Pol-Meth Eu-rope
  (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
  []
 
 [4]
-Overfull \hbox (3.65285pt too wide) in paragraph at lines 597--598
+Overfull \hbox (3.65285pt too wide) in paragraph at lines 598--599
 \OT1/ptm/m/n/10.95 (Toronto), MPSA (Chicago), Po-lit-i-cal Psy-chol-ogy APSA Pr
 e-Conference (Wash-ing-ton D.C.),
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 693--695
+Underfull \hbox (badness 10000) in paragraph at lines 694--696
 
  []
 
 
-Overfull \hbox (13.31148pt too wide) in paragraph at lines 703--704
+Overfull \hbox (13.31148pt too wide) in paragraph at lines 704--705
 []\OT1/ptm/b/n/10.95 Referee: \OT1/ptm/m/it/10.95 Amer-i-can Jour-nal of Po-lit
 -i-cal Sci-ence, Amer-i-can Po-lit-i-cal Sci-ence Re-view, Cam-bridge
  []
 
 
-Overfull \hbox (3.40088pt too wide) in paragraph at lines 703--704
+Overfull \hbox (3.40088pt too wide) in paragraph at lines 704--705
 \OT1/ptm/m/it/10.95 Uni-ver-sity Press (El-e-ments in Ex-per-i-men-tal Po-lit-i
 -cal Sci-ence), Com-par-a-tive Po-lit-i-cal Stud-ies,
  []
 
 
-Overfull \hbox (2.26338pt too wide) in paragraph at lines 703--704
+Overfull \hbox (2.26338pt too wide) in paragraph at lines 704--705
 \OT1/ptm/m/it/10.95 Eth-nop-o-l-i-tics, Elec-toral Stud-ies, Fron-tiers in Psy-
 chol-ogy, Hu-man Right Re-view, In-ter-na-tional
  []
 
 
-Overfull \hbox (1.79265pt too wide) in paragraph at lines 703--704
+Overfull \hbox (1.79265pt too wide) in paragraph at lines 704--705
 \OT1/ptm/m/it/10.95 and Health Pol-icy, Jour-nal of Peace Re-search, Jour-nal o
 f Pol-i-tics, Lo-cal Gov-ern-ment Stud-ies,
  []
 
 
-Overfull \hbox (2.7441pt too wide) in paragraph at lines 705--706
+Overfull \hbox (2.7441pt too wide) in paragraph at lines 706--707
 \OT1/ptm/m/it/10.95 MPSA best pa-per award in po-lit-i-cal be-hav-ior \OT1/ptm/
 m/n/10.95 (2025), \OT1/ptm/m/it/10.95 APSA best pa-per award in ex-per-i-men-ta
 l
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 709.
+Package xcolor Warning: Incompatible color definition on input line 710.
 
 
-Package xcolor Warning: Incompatible color definition on input line 731.
+Package xcolor Warning: Incompatible color definition on input line 732.
 
 
-Package xcolor Warning: Incompatible color definition on input line 733.
+Package xcolor Warning: Incompatible color definition on input line 734.
 
 
-Package xcolor Warning: Incompatible color definition on input line 735.
+Package xcolor Warning: Incompatible color definition on input line 736.
 
 
-Overfull \hbox (0.67555pt too wide) in paragraph at lines 748--749
+Overfull \hbox (0.67555pt too wide) in paragraph at lines 749--750
 []\OT1/ptm/b/n/10.95 Hebrew \OT1/ptm/m/n/10.95 (Na-tive), \OT1/ptm/b/n/10.95 Mo
 d-ern Stan-dard Ara-bic \OT1/ptm/m/n/10.95 (Ad-vanced), \OT1/ptm/b/n/10.95 Lev-
 an-tine Ara-bic \OT1/ptm/m/n/10.95 (In-ter-me-di-ate)
@@ -995,7 +995,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 104547 bytes).
+Output written on "CMW CV.pdf" (6 pages, 104576 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  193 compressed objects within 2 object streams
