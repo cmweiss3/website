@@ -2,6 +2,7 @@
 
 body {
   padding:50px;
+  padding-top:68px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#2d2d2d;
   font-weight:300;
@@ -111,6 +112,14 @@ th {
 
 img {
   max-width:100%;
+}
+
+header img {
+  border-radius: 0;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  object-position: center top;
 }
 
 header {
@@ -258,9 +267,13 @@ footer {
   body {
     padding:15px;
   }
-  
+
   header ul {
     display:none;
+  }
+
+  .top-nav {
+    padding: 8px 15px;
   }
 }
 
@@ -270,4 +283,44 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 50px;
+}
+
+.nav-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+}
+
+.nav-link {
+  color: #888;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: #00008B;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #00008B;
+  font-weight: 700;
+  border-bottom: 2px solid #00008B;
 }
