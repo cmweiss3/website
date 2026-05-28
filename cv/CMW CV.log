@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  7 MAY 2026 06:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  27 MAY 2026 20:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -904,75 +904,75 @@ Package xcolor Warning: Incompatible color definition on input line 571.
 Package xcolor Warning: Incompatible color definition on input line 573.
 
 
-Overfull \hbox (5.48264pt too wide) in paragraph at lines 580--584
+Overfull \hbox (5.48264pt too wide) in paragraph at lines 580--585
 \OT1/ptm/b/n/10.95 ESOC, and U.N. Be-hav-ioral In-sights\OT1/ptm/m/n/10.95 , \O
 T1/ptm/m/it/10.95 Roundtable on En-gi-neer-ing Peace\OT1/ptm/m/n/10.95 , \OT1/p
 tm/b/n/10.95 Na-tional In-sti-tute
  []
 
 
-Overfull \hbox (1.47554pt too wide) in paragraph at lines 580--584
+Overfull \hbox (1.47554pt too wide) in paragraph at lines 580--585
 \OT1/ptm/m/it/10.95 Po-lar-iza-tion and So-cial Change Lab\OT1/ptm/m/n/10.95 , 
 \OT1/ptm/b/n/10.95 WashU\OT1/ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 10th Com-par-a
 -tive Pol-i-tics An-nual Con-fer-ence\OT1/ptm/m/n/10.95 ,
  []
 
 [4]
-Overfull \hbox (15.77364pt too wide) in paragraph at lines 601--602
+Overfull \hbox (15.77364pt too wide) in paragraph at lines 602--603
 []\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : APSA (Seat-tle), Pol-Meth Eu-rope
  (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
  []
 
 
-Overfull \hbox (3.65285pt too wide) in paragraph at lines 605--606
+Overfull \hbox (3.65285pt too wide) in paragraph at lines 606--607
 \OT1/ptm/m/n/10.95 (Toronto), MPSA (Chicago), Po-lit-i-cal Psy-chol-ogy APSA Pr
 e-Conference (Wash-ing-ton D.C.),
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 703--705
+Underfull \hbox (badness 10000) in paragraph at lines 704--706
 
  []
 
 
-Overfull \hbox (0.19365pt too wide) in paragraph at lines 713--714
+Overfull \hbox (0.19365pt too wide) in paragraph at lines 714--715
 []\OT1/ptm/b/n/10.95 Journal Ref-eree: \OT1/ptm/m/it/10.95 Amer-i-can Jour-nal 
 of Po-lit-i-cal Sci-ence, Amer-i-can Po-lit-i-cal Sci-ence Re-view,
  []
 
 
-Overfull \hbox (9.43553pt too wide) in paragraph at lines 713--714
+Overfull \hbox (9.43553pt too wide) in paragraph at lines 714--715
 \OT1/ptm/m/it/10.95 of Con-flict Res-o-lu-tion, Jour-nal of Elec-tions, Pub-lic
  Opin-ion and Par-ties, Jour-nal of Ac-count-ing
  []
 
 
-Overfull \hbox (1.79265pt too wide) in paragraph at lines 713--714
+Overfull \hbox (1.79265pt too wide) in paragraph at lines 714--715
 \OT1/ptm/m/it/10.95 and Health Pol-icy, Jour-nal of Peace Re-search, Jour-nal o
 f Pol-i-tics, Lo-cal Gov-ern-ment Stud-ies,
  []
 
 
-Overfull \hbox (2.7441pt too wide) in paragraph at lines 720--721
+Overfull \hbox (2.7441pt too wide) in paragraph at lines 721--722
 \OT1/ptm/m/it/10.95 MPSA best pa-per award in po-lit-i-cal be-hav-ior \OT1/ptm/
 m/n/10.95 (2025), \OT1/ptm/m/it/10.95 APSA best pa-per award in ex-per-i-men-ta
 l
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 724.
+Package xcolor Warning: Incompatible color definition on input line 725.
 
 
-Package xcolor Warning: Incompatible color definition on input line 746.
+Package xcolor Warning: Incompatible color definition on input line 747.
 
 
-Package xcolor Warning: Incompatible color definition on input line 748.
+Package xcolor Warning: Incompatible color definition on input line 749.
 
 
-Package xcolor Warning: Incompatible color definition on input line 750.
+Package xcolor Warning: Incompatible color definition on input line 751.
 
 
-Overfull \hbox (0.67555pt too wide) in paragraph at lines 763--764
+Overfull \hbox (0.67555pt too wide) in paragraph at lines 764--765
 []\OT1/ptm/b/n/10.95 Hebrew \OT1/ptm/m/n/10.95 (Na-tive), \OT1/ptm/b/n/10.95 Mo
 d-ern Stan-dard Ara-bic \OT1/ptm/m/n/10.95 (Ad-vanced), \OT1/ptm/b/n/10.95 Lev-
 an-tine Ara-bic \OT1/ptm/m/n/10.95 (In-ter-me-di-ate)
@@ -981,9 +981,6 @@ an-tine Ara-bic \OT1/ptm/m/n/10.95 (In-ter-me-di-ate)
 [6] 
 AED: lastpage setting LastPage
 [7] (./CMW CV.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
 (rerunfilecheck)             Checksum: 3CA1BD8B2873F3446402C02B57391D86;2069.
  ) 
@@ -1002,7 +999,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (7 pages, 105763 bytes).
+Output written on "CMW CV.pdf" (7 pages, 105798 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  197 compressed objects within 2 object streams
