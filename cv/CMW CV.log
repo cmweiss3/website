@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  10 JUL 2026 14:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  28 JUL 2026 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -939,40 +939,43 @@ e-Conference (Wash-ing-ton D.C.),
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 709--711
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
 
  []
 
 
-Overfull \hbox (0.19365pt too wide) in paragraph at lines 719--720
+Overfull \hbox (0.19365pt too wide) in paragraph at lines 721--722
 []\OT1/ptm/b/n/10.95 Journal Ref-eree: \OT1/ptm/m/it/10.95 Amer-i-can Jour-nal 
 of Po-lit-i-cal Sci-ence, Amer-i-can Po-lit-i-cal Sci-ence Re-view,
  []
 
 
-Overfull \hbox (9.43553pt too wide) in paragraph at lines 719--720
+Overfull \hbox (9.43553pt too wide) in paragraph at lines 721--722
 \OT1/ptm/m/it/10.95 of Con-flict Res-o-lu-tion, Jour-nal of Elec-tions, Pub-lic
  Opin-ion and Par-ties, Jour-nal of Ac-count-ing
  []
 
 
-Overfull \hbox (1.79265pt too wide) in paragraph at lines 719--720
+Overfull \hbox (1.79265pt too wide) in paragraph at lines 721--722
 \OT1/ptm/m/it/10.95 and Health Pol-icy, Jour-nal of Peace Re-search, Jour-nal o
 f Pol-i-tics, Lo-cal Gov-ern-ment Stud-ies,
  []
 
 
-Overfull \hbox (2.7441pt too wide) in paragraph at lines 726--727
+Overfull \hbox (10.3772pt too wide) in paragraph at lines 721--722
+\OT1/ptm/m/it/10.95 of Eco-nomics, Sci-ence Ad-vances, So-cial Psy-cho-log-i-ca
+l and Per-son-al-ity Sci-ence, World Pol-i-tics\OT1/ptm/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (2.7441pt too wide) in paragraph at lines 728--729
 \OT1/ptm/m/it/10.95 MPSA best pa-per award in po-lit-i-cal be-hav-ior \OT1/ptm/
 m/n/10.95 (2025), \OT1/ptm/m/it/10.95 APSA best pa-per award in ex-per-i-men-ta
 l
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 730.
-
-
-Package xcolor Warning: Incompatible color definition on input line 752.
+Package xcolor Warning: Incompatible color definition on input line 732.
 
 
 Package xcolor Warning: Incompatible color definition on input line 754.
@@ -980,8 +983,11 @@ Package xcolor Warning: Incompatible color definition on input line 754.
 
 Package xcolor Warning: Incompatible color definition on input line 756.
 
+
+Package xcolor Warning: Incompatible color definition on input line 758.
+
 [6]
-Overfull \hbox (0.67555pt too wide) in paragraph at lines 769--770
+Overfull \hbox (0.67555pt too wide) in paragraph at lines 771--772
 []\OT1/ptm/b/n/10.95 Hebrew \OT1/ptm/m/n/10.95 (Na-tive), \OT1/ptm/b/n/10.95 Mo
 d-ern Stan-dard Ara-bic \OT1/ptm/m/n/10.95 (Ad-vanced), \OT1/ptm/b/n/10.95 Lev-
 an-tine Ara-bic \OT1/ptm/m/n/10.95 (In-ter-me-di-ate)
@@ -1000,7 +1006,7 @@ Here is how much of TeX's memory you used:
  31278 multiletter control sequences out of 15000+600000
  490631 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,80p,1132b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,14n,80p,1155b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1008,7 +1014,7 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (7 pages, 106128 bytes).
+Output written on "CMW CV.pdf" (7 pages, 106599 bytes).
 PDF statistics:
  221 PDF objects out of 1000 (max. 8388607)
  198 compressed objects within 2 object streams
