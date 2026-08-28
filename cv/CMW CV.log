@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  11 AUG 2026 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  27 AUG 2026 14:35
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **"CMW CV.tex"
 (./CMW CV.tex
@@ -299,8 +298,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip65
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 133.
-Package hyperref Info: Option `breaklinks' set `true' on input line 133.
+Package hyperref Info: Option `colorlinks' set `true' on input line 134.
+Package hyperref Info: Option `breaklinks' set `true' on input line 134.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip66
@@ -375,6 +374,30 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
+(/usr/local/texlive/2022/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
+\CenteringLeftskip=\skip69
+\RaggedLeftLeftskip=\skip70
+\RaggedRightLeftskip=\skip71
+\CenteringRightskip=\skip72
+\RaggedLeftRightskip=\skip73
+\RaggedRightRightskip=\skip74
+\CenteringParfillskip=\skip75
+\RaggedLeftParfillskip=\skip76
+\RaggedRightParfillskip=\skip77
+\JustifyingParfillskip=\skip78
+\CenteringParindent=\skip79
+\RaggedLeftParindent=\skip80
+\RaggedRightParindent=\skip81
+\JustifyingParindent=\skip82
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\cvdatewidth=\skip83
+\c@cvpub=\count292
+\cvindentamt=\skip84
+
 (/usr/local/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
@@ -393,15 +416,15 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \ar@mcellbox=\box53
 \extrarowheight=\dimen164
 \NC@list=\toks26
-\extratabsurround=\skip69
-\backup@length=\skip70
+\extratabsurround=\skip85
+\backup@length=\skip86
 \ar@cellbox=\box54
 )
 \everycr=\toks27
-\minrowclearance=\skip71
+\minrowclearance=\skip87
 )
 LaTeX Info: Redefining \color on input line 711.
-\rownum=\count292
+\rownum=\count293
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
@@ -421,38 +444,38 @@ File: svgnam.def 2021/10/31 v2.13 Predefined colors according to SVG 1.1 (UK)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/marvosym/marvosym.sty
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-40.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+23.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count293
+\l__color_backend_stack_int=\count294
 \l__pdf_internal_box=\box55
 )
 (./CMW CV.aux)
 \openout1 = `"CMW CV.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 323.
+LaTeX Font Info:    ... okay on input line 323.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -462,20 +485,20 @@ LaTeX Font Info:    ... okay on input line 240.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includemp 
-* h-part:(L,W,R)=(57.81621pt, 498.66258pt, 57.81621pt)
-* v-part:(T,H,B)=(57.81621pt, 679.33757pt, 57.81621pt)
+* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=401.09766pt
-* \textheight=679.33757pt
-* \oddsidemargin=83.11115pt
-* \evensidemargin=83.11115pt
-* \topmargin=-51.45378pt
+* \textwidth=415.55252pt
+* \textheight=686.56499pt
+* \oddsidemargin=72.26999pt
+* \evensidemargin=72.26999pt
+* \topmargin=-55.06749pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=93.95122pt
+* \marginparwidth=86.72377pt
 * \marginparsep=3.61371pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
@@ -490,22 +513,22 @@ LaTeX Font Info:    ... okay on input line 240.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 240.
+(lastpage)             ! on input line 323.
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
+\scratchcounter=\count295
 \scratchdimen=\dimen165
 \scratchbox=\box56
-\nofMPsegments=\count295
-\nofMParguments=\count296
+\nofMPsegments=\count296
+\nofMParguments=\count297
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count297
+\MPscratchCnt=\count298
 \MPscratchDim=\dimen166
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
 \everyMPtoPDFconversion=\toks29
 )
-Package hyperref Info: Link coloring ON on input line 240.
+Package hyperref Info: Link coloring ON on input line 323.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -516,507 +539,276 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count300
+\c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 240.
-LaTeX Info: Redefining \pageref on input line 240.
-LaTeX Info: Redefining \nameref on input line 240.
+LaTeX Info: Redefining \ref on input line 323.
+LaTeX Info: Redefining \pageref on input line 323.
+LaTeX Info: Redefining \nameref on input line 323.
  (./CMW CV.out) (./CMW CV.out)
 \@outlinefile=\write4
 \openout4 = `"CMW CV.out"'.
 
-\rcollength=\skip72
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 253.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 253.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 253.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 253.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 253.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 253.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 253.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 25
-3.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-
-Package xcolor Warning: Incompatible color definition on input line 256.
-
-
-Package xcolor Warning: Incompatible color definition on input line 257.
-
-
-Overfull \hbox (18.0pt too wide) in paragraph at lines 253--259
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 253--259
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 279.
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-81.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-
-Package xcolor Warning: Incompatible color definition on input line 283.
-
-
-Package xcolor Warning: Incompatible color definition on input line 284.
-
-
-Package xcolor Warning: Incompatible color definition on input line 289.
-
-
-Package xcolor Warning: Incompatible color definition on input line 291.
-
-
-Package xcolor Warning: Incompatible color definition on input line 292.
-
-
-Package xcolor Warning: Incompatible color definition on input line 293.
-
-
-Package xcolor Warning: Incompatible color definition on input line 296.
-
-
-Package xcolor Warning: Incompatible color definition on input line 301.
-
-
-Package xcolor Warning: Incompatible color definition on input line 308.
-
-
-Package xcolor Warning: Incompatible color definition on input line 313.
-
-
-Package xcolor Warning: Incompatible color definition on input line 341.
 
 
 Package xcolor Warning: Incompatible color definition on input line 344.
 
 
-Package xcolor Warning: Incompatible color definition on input line 348.
+Package xcolor Warning: Incompatible color definition on input line 345.
 
 
-Package xcolor Warning: Incompatible color definition on input line 359.
+Package xcolor Warning: Incompatible color definition on input line 364.
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+67.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+
+Package xcolor Warning: Incompatible color definition on input line 367.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
-
- []
+Package xcolor Warning: Incompatible color definition on input line 368.
 
 
-Package xcolor Warning: Incompatible color definition on input line 361.
+Package xcolor Warning: Incompatible color definition on input line 372.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
-
- []
+Package xcolor Warning: Incompatible color definition on input line 373.
 
 
 Package xcolor Warning: Incompatible color definition on input line 374.
 
 
-Package xcolor Warning: Incompatible color definition on input line 379.
+Package xcolor Warning: Incompatible color definition on input line 375.
 
 
-Overfull \hbox (27.51468pt too wide) in paragraph at lines 379--380
-[]\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 , Alexan-dra Scacco, a
-nd Alexan-dra Siegel. ``[][]Out-group Avoid-ance.[][]" Forth-com-ing
- []
+Package xcolor Warning: Incompatible color definition on input line 377.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+Package xcolor Warning: Incompatible color definition on input line 378.
 
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 381.
-
-
-Overfull \hbox (0.14914pt too wide) in paragraph at lines 381--382
-\OT1/ptm/m/n/10.95 Gen-er-al-iz-abil-ity of IR Ex-per-i-ments Be-yond the U.S.[
-][]" Forth-com-ing in \OT1/ptm/m/it/10.95 The Amer-i-can Po-lit-i-cal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
-
- []
-
-[1
-
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package xcolor Warning: Incompatible color definition on input line 383.
 
 
-Overfull \hbox (7.00401pt too wide) in paragraph at lines 383--384
-[]\OT1/ptm/m/n/10.95 Jha, Saumi-tra, Moses Shayo, and \OT1/ptm/b/n/10.95 Cha-ga
-i M. Weiss\OT1/ptm/m/n/10.95 . ``[][]Fi-nan-cial Mar-ket Par-tic-i-pa-tion In-c
-reases
- []
+Package xcolor Warning: Incompatible color definition on input line 384.
 
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 388.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 388.
 
-Package xcolor Warning: Incompatible color definition on input line 388.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 388.
 
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 388.
 
-Overfull \hbox (8.37383pt too wide) in paragraph at lines 388--389
-[]\OT1/ptm/m/n/10.95 Kao, Kris-ten, Ellen Lust, Marwa Sha-l-aby, and \OT1/ptm/b
-/n/10.95 Cha-gai M. Weiss\OT1/ptm/m/n/10.95 . ``[][]Group Gen-der Com-po-si-tio
-n
- []
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 388.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 388.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 388.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 38
+8.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 390.
-
-
-Package xcolor Warning: Incompatible color definition on input line 395.
-
-
-Package xcolor Warning: Incompatible color definition on input line 400.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 402.
-
-
-Overfull \hbox (0.78442pt too wide) in paragraph at lines 402--403
-\OT1/ptm/m/n/10.95 ``[][]Ab-strac-tion and De-tail in Ex-per-i-men-tal De-sign.
-[][]" \OT1/ptm/m/it/10.95 The Amer-i-can Jour-nal of Po-lit-i-cal Sci-ence\OT1/
-ptm/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 404.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 406.
-
-
-Overfull \hbox (3.18417pt too wide) in paragraph at lines 406--407
-[]\OT1/ptm/b/n/10.95 Weiss, Cha-gai M.\OT1/ptm/m/n/10.95 , Neal Tsur, Dan Miodo
-wnik, Yonatan Lupu, and Evgeny Finkel. ``[][]Atyp-i-cal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 408.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
-
- []
-
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
 
 Package xcolor Warning: Incompatible color definition on input line 410.
 
-[2]
 
-Package xcolor Warning: Incompatible color definition on input line 416.
-
-
-Overfull \hbox (11.47186pt too wide) in paragraph at lines 416--417
-\OT1/ptm/m/n/10.95 Af-fec-tive Po-lar-iza-tion: Ev-i-dence from Nat-u-ral and S
-ur-vey Ex-per-i-ments in Is-rael.[][]" \OT1/ptm/m/it/10.95 Com-par-a-tive
- []
+Package xcolor Warning: Incompatible color definition on input line 413.
 
 
-Package xcolor Warning: Incompatible color definition on input line 422.
+Package xcolor Warning: Incompatible color definition on input line 414.
 
 
-Overfull \hbox (15.4028pt too wide) in paragraph at lines 422--423
-[]\OT1/ptm/m/n/10.95 Gilad, Sharon, Saar Alon-Barkat, and \OT1/ptm/b/n/10.95 Ch
-a-gai M. Weiss\OT1/ptm/m/n/10.95 . ``[][]Po-lit-i-cal and Bu-reau-cratic Trans-
-la-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
-
- []
+Package xcolor Warning: Incompatible color definition on input line 423.
 
 
 Package xcolor Warning: Incompatible color definition on input line 424.
 
 
-Overfull \hbox (3.62144pt too wide) in paragraph at lines 424--425
-\OT1/ptm/m/n/10.95 Jerusalem: The Spa-tial Logic of In-ter-group Con-flict.[][]
-" \OT1/ptm/m/it/10.95 Po-lit-i-cal Ge-og-ra-phy\OT1/ptm/m/n/10.95 , 66 (2018): 
-88{97. 
- []
+Package xcolor Warning: Incompatible color definition on input line 436.
+
+
+Package xcolor Warning: Incompatible color definition on input line 440.
+
+
+Package xcolor Warning: Incompatible color definition on input line 441.
+
+
+Package xcolor Warning: Incompatible color definition on input line 442.
+
+[1
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package xcolor Warning: Incompatible color definition on input line 446.
+
+
+Package xcolor Warning: Incompatible color definition on input line 447.
+
+
+Package xcolor Warning: Incompatible color definition on input line 448.
 
 
 Package xcolor Warning: Incompatible color definition on input line 452.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+Package xcolor Warning: Incompatible color definition on input line 453.
 
+
+Package xcolor Warning: Incompatible color definition on input line 454.
+
+
+Package xcolor Warning: Incompatible color definition on input line 455.
+
+
+Package xcolor Warning: Incompatible color definition on input line 456.
+
+
+Package xcolor Warning: Incompatible color definition on input line 460.
+
+
+Package xcolor Warning: Incompatible color definition on input line 465.
+
+
+Overfull \hbox (0.82861pt too wide) in paragraph at lines 465--467
+\OT1/ptm/m/n/10.95 u-dice To-ward Arabs.[][]'' \OT1/ptm/m/it/10.95 Pro-ceed-ing
+s of the Na-tional Academy of Sci-ences\OT1/ptm/m/n/10.95 , 118(14) (2021).  
  []
 
 
-Overfull \hbox (3.88393pt too wide) in paragraph at lines 454--455
-[]\OT1/ptm/b/n/10.95 Chagai M. Weiss\OT1/ptm/m/n/10.95 , Sascha Riaz, Julie Cac
-hia, and Xuan Zhao. ``Does Re-duc-ing Psy-cho-log-i-cal
+Package xcolor Warning: Incompatible color definition on input line 470.
+
+
+Package xcolor Warning: Incompatible color definition on input line 471.
+
+[2]
+
+Package xcolor Warning: Incompatible color definition on input line 499.
+
+
+Package xcolor Warning: Incompatible color definition on input line 501.
+
+
+Package xcolor Warning: Incompatible color definition on input line 502.
+
+
+Package xcolor Warning: Incompatible color definition on input line 504.
+
+
+Overfull \hbox (8.099pt too wide) in paragraph at lines 573--574
+[]\OT1/ptm/m/n/10.95 Littman, Re-becca, Alexan-dra Scacco, and \OT1/ptm/b/n/10.
+95 Cha-gai M. Weiss\OT1/ptm/m/n/10.95 . ``Re-duc-ing Prej-u-dice through 
  []
 
 
-Overfull \hbox (5.96367pt too wide) in paragraph at lines 454--455
-\OT1/ptm/m/n/10.95 Dis-tress In-crease Sup-port for Lib-eral Democ-racy?" In-vi
-ted to re-vise and re-sub-mit as regise-tred
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 458.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 462.
-
-
-Overfull \hbox (1.43088pt too wide) in paragraph at lines 462--463
-[]\OT1/ptm/m/n/10.95 Hanlon, Michele, Saumi-tra Jha, Nam-rata Kala, Ne-mit Shro
-ff, and \OT1/ptm/b/n/10.95 Cha-gai M. Weiss\OT1/ptm/m/n/10.95 . ``[][]See-ing
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 464.
-
-
-Overfull \hbox (4.22266pt too wide) in paragraph at lines 480--481
-\OT1/ptm/m/n/10.95 Robb Willer. ``Per-sua-sion at Scale: Ev-i-dence from Meta-A
-nalyses of Pro-pri-etary Ex-per-i-ments
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 485--486
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
-
- []
-
-[3]
-
-Package xcolor Warning: Incompatible color definition on input line 548.
-
-
-Overfull \hbox (21.8962pt too wide) in paragraph at lines 548--549
-\OT1/ptm/m/n/10.95 of De-cen-tral-iza-tion in the MENA: Pro-cesses, Out-comes, 
-and Ob-sta-cles.[][]" \OT1/ptm/m/it/10.95 Pro-gram on Gov-er-nance
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 550.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 552.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 554.
-
-
-Package xcolor Warning: Incompatible color definition on input line 573.
+Package xcolor Warning: Incompatible color definition on input line 574.
 
 
 Package xcolor Warning: Incompatible color definition on input line 575.
 
 
+Package xcolor Warning: Incompatible color definition on input line 576.
+
+
 Package xcolor Warning: Incompatible color definition on input line 577.
 
 
-Package xcolor Warning: Incompatible color definition on input line 579.
-
-
-Package xcolor Warning: Incompatible color definition on input line 581.
-
-
-Overfull \hbox (5.48264pt too wide) in paragraph at lines 588--593
-\OT1/ptm/b/n/10.95 ESOC, and U.N. Be-hav-ioral In-sights\OT1/ptm/m/n/10.95 , \O
-T1/ptm/m/it/10.95 Roundtable on En-gi-neer-ing Peace\OT1/ptm/m/n/10.95 , \OT1/p
-tm/b/n/10.95 Na-tional In-sti-tute
+Overfull \hbox (9.96074pt too wide) in paragraph at lines 577--588
+[]\OT1/ptm/b/n/10.95 Weiss, Cha-gai M. \OT1/ptm/m/n/10.95 ``[][]Seg-re-ga-tion,
+ In-te-gra-tion, and In-ter-group Re-la-tions in Is-rael.[][]'' \OT1/ptm/m/it/1
+0.95 POMEPS 
  []
 
 
-Overfull \hbox (1.47554pt too wide) in paragraph at lines 588--593
-\OT1/ptm/m/it/10.95 Po-lar-iza-tion and So-cial Change Lab\OT1/ptm/m/n/10.95 , 
-\OT1/ptm/b/n/10.95 WashU\OT1/ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 10th Com-par-a
--tive Pol-i-tics An-nual Con-fer-ence\OT1/ptm/m/n/10.95 ,
- []
+Package xcolor Warning: Incompatible color definition on input line 592.
+
+
+Package xcolor Warning: Incompatible color definition on input line 594.
+
+
+Package xcolor Warning: Incompatible color definition on input line 596.
+
+[3]
+
+Package xcolor Warning: Incompatible color definition on input line 598.
+
+
+Package xcolor Warning: Incompatible color definition on input line 600.
 
 [4]
-Overfull \hbox (15.77364pt too wide) in paragraph at lines 610--611
-[]\OT1/ptm/b/n/10.95 2021\OT1/ptm/m/n/10.95 : APSA (Seat-tle), Pol-Meth Eu-rope
- (Vir-tual Poster), MPSA (Vir-tual), Har-vard Ex-per-i-men-tal
+Underfull \hbox (badness 1062) in paragraph at lines 655--655
+[]\OT1/ptm/b/n/10.95 Horowitz Foun-da-tion for So-cial Pol-icy Re-search Grant\
+OT1/ptm/m/n/10.95 , Na-tional 
  []
 
 
-Overfull \hbox (3.65285pt too wide) in paragraph at lines 614--615
-\OT1/ptm/m/n/10.95 (Toronto), MPSA (Chicago), Po-lit-i-cal Psy-chol-ogy APSA Pr
-e-Conference (Wash-ing-ton D.C.),
+Underfull \hbox (badness 1360) in paragraph at lines 660--660
+[]\OT1/ptm/b/n/10.95 The Mor-ris Abrams Award in In-ter-na-tional Re-la-tions\O
+T1/ptm/m/n/10.95 , Na-tional 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 716--718
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
 
- []
-
-
-Overfull \hbox (0.19365pt too wide) in paragraph at lines 726--727
-[]\OT1/ptm/b/n/10.95 Journal Ref-eree: \OT1/ptm/m/it/10.95 Amer-i-can Jour-nal 
-of Po-lit-i-cal Sci-ence, Amer-i-can Po-lit-i-cal Sci-ence Re-view,
- []
-
-
-Overfull \hbox (9.43553pt too wide) in paragraph at lines 726--727
-\OT1/ptm/m/it/10.95 of Con-flict Res-o-lu-tion, Jour-nal of Elec-tions, Pub-lic
- Opin-ion and Par-ties, Jour-nal of Ac-count-ing
- []
-
-
-Overfull \hbox (1.79265pt too wide) in paragraph at lines 726--727
-\OT1/ptm/m/it/10.95 and Health Pol-icy, Jour-nal of Peace Re-search, Jour-nal o
-f Pol-i-tics, Lo-cal Gov-ern-ment Stud-ies,
- []
-
-
-Overfull \hbox (10.3772pt too wide) in paragraph at lines 726--727
-\OT1/ptm/m/it/10.95 of Eco-nomics, Sci-ence Ad-vances, So-cial Psy-cho-log-i-ca
-l and Per-son-al-ity Sci-ence, World Pol-i-tics\OT1/ptm/m/n/10.95 . 
- []
-
-
-Overfull \hbox (2.7441pt too wide) in paragraph at lines 733--734
-\OT1/ptm/m/it/10.95 MPSA best pa-per award in po-lit-i-cal be-hav-ior \OT1/ptm/
-m/n/10.95 (2025), \OT1/ptm/m/it/10.95 APSA best pa-per award in ex-per-i-men-ta
-l
  []
 
 
 Package xcolor Warning: Incompatible color definition on input line 737.
 
 
-Package xcolor Warning: Incompatible color definition on input line 759.
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
+
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 761.
+Package xcolor Warning: Incompatible color definition on input line 739.
 
 
-Package xcolor Warning: Incompatible color definition on input line 763.
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
 
-[6]
-Overfull \hbox (0.67555pt too wide) in paragraph at lines 776--777
-[]\OT1/ptm/b/n/10.95 Hebrew \OT1/ptm/m/n/10.95 (Na-tive), \OT1/ptm/b/n/10.95 Mo
-d-ern Stan-dard Ara-bic \OT1/ptm/m/n/10.95 (Ad-vanced), \OT1/ptm/b/n/10.95 Lev-
-an-tine Ara-bic \OT1/ptm/m/n/10.95 (In-ter-me-di-ate)
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 741.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--744
+
  []
 
 
 AED: lastpage setting LastPage
-[7] (./CMW CV.aux)
+[6] (./CMW CV.aux)
 Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
-(rerunfilecheck)             Checksum: 3CA1BD8B2873F3446402C02B57391D86;2069.
+(rerunfilecheck)             Checksum: 60DCD85AEC60581F0223017BBD2CB70C;1983.
  ) 
 Here is how much of TeX's memory you used:
- 13293 strings out of 478268
- 202817 string characters out of 5846347
- 522017 words of memory out of 5000000
- 31278 multiletter control sequences out of 15000+600000
- 490631 words of font info for 75 fonts, out of 8000000 for 9000
+ 13421 strings out of 478268
+ 205664 string characters out of 5846347
+ 524506 words of memory out of 5000000
+ 31400 multiletter control sequences out of 15000+600000
+ 490673 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,1155b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,13n,80p,1157b,568s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1024,10 +816,10 @@ live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (7 pages, 107003 bytes).
+Output written on "CMW CV.pdf" (6 pages, 105099 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

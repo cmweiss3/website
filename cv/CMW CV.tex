@@ -54,7 +54,6 @@
 \makeatother
 
 
-
 % Layout: Puts the section titles on left side of page
 \reversemarginpar
 
@@ -85,9 +84,9 @@
 %% Use these lines for letter-sized paper
 \usepackage[paper=letterpaper,
             %includefoot, % Uncomment to put page number above margin
-            marginparwidth=1.3in,     % Length of section titles
+            marginparwidth=1.2in,     % Length of section titles
             marginparsep=.05in,       % Space between titles and text
-            margin=.8in,               % 1 inch margins
+            margin=.75in,              % page margins
             includemp]{geometry}
 
 %% Use these lines for A4-sized paper
@@ -128,9 +127,11 @@
 % Finally, give us PDF bookmarks
 \usepackage{color,hyperref}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.30}
+% Deep desaturated slate: reads as text at a glance, clearly a link up close.
+\definecolor{cvlink}{RGB}{27,54,79}
 \hypersetup{colorlinks,breaklinks,
-            linkcolor=darkblue,urlcolor=darkblue,
-            anchorcolor=darkblue,citecolor=darkblue}
+            linkcolor=cvlink,urlcolor=cvlink,
+            anchorcolor=cvlink,citecolor=cvlink}
      
 \PassOptionsToPackage{bookmarks=false}{hyperref}
 %%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,19 +163,22 @@
 \newcommand{\makeheading}[2][]%
         {\hspace*{-\marginparsep minus \marginparwidth}%
          \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
-             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+             {\LARGE \bfseries #2 \hfill #1}\\[0.02\baselineskip]%
                  \rule{\columnwidth}{1pt}%
          \end{minipage}}
 
 % The section headings
 %
 % Usage: \section{section name}
-\renewcommand{\section}[1]{\pagebreak[3]%
-    \hyphenpenalty=10000%
-    \vspace{1.3\baselineskip}%
+\renewcommand{\section}[1]{%
+    \Needspace{5\baselineskip}%          % never leave a heading stranded at a page foot
+    \pagebreak[3]%
+    \vspace{1.15\baselineskip}%          % single, consistent gap above every section
     \phantomsection\addcontentsline{toc}{section}{#1}%
-    \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
-    \vspace{-\baselineskip}\par}
+    % hyphenpenalty is scoped to the heading so it no longer leaks into body text
+    \noindent\llap{\bfseries\scshape\smash{\parbox[t]{\marginparwidth}{\hyphenpenalty=10000\raggedright #1}}}%
+    \vspace{-\baselineskip}\par
+    \vspace{.10in}}%                     % single, consistent gap below every section head
 
 % An itemize-style list with lots of space between items
 \newenvironment{outerlist}[1][\enskip\textbullet]%
@@ -229,6 +233,85 @@
     \TeX}}
 \providecommand\Matlab{\textsc{Matlab}}
 
+% ===================== CV formatting helpers =====================
+\usepackage{ragged2e}
+\usepackage{needspace}
+\widowpenalty=10000
+\clubpenalty=10000
+
+% 5. Fixed-width right-hand date column, so every date in the CV aligns.
+\newlength{\cvdatewidth}\setlength{\cvdatewidth}{0.86in}
+\newcommand{\cvrow}[2]{%
+  \par\noindent
+  \begin{minipage}[t]{\dimexpr\linewidth-\cvdatewidth-0.6em\relax}%
+    \hyphenpenalty=10000\exhyphenpenalty=10000\RaggedRight #1%
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{\cvdatewidth}%
+    \raggedleft #2%
+  \end{minipage}%
+  \par}
+
+% 1+2+3. Descending-numbered publication list, ragged right, hanging indent.
+%    Usage: \begin{cvpubs}{<number of items>} \item ... \end{cvpubs}
+\newcounter{cvpub}
+\newenvironment{cvpubs}[1]
+  {\setcounter{cvpub}{#1}\addtocounter{cvpub}{1}%
+   \RaggedRight\interlinepenalty=150%
+   \begin{list}{\addtocounter{cvpub}{-1}\arabic{cvpub}.}%
+     {\setlength{\labelwidth}{1.85em}%
+      \setlength{\labelsep}{0.45em}%
+      \setlength{\leftmargin}{2.30em}%
+      \setlength{\rightmargin}{0pt}%
+      \setlength{\itemindent}{0pt}%
+      \setlength{\listparindent}{0pt}%
+      \setlength{\topsep}{0pt}%
+      \setlength{\partopsep}{0pt}%
+      \setlength{\parsep}{0pt}%
+      \setlength{\itemsep}{5.5pt}%
+      \renewcommand{\makelabel}[1]{\hfil##1}}}
+  {\end{list}}
+
+% 6. Tight award / note bullets hugging their parent entry.
+\newenvironment{cvnotes}[1][$\star$]
+  {\begin{itemize}[#1,leftmargin=2.4em,labelsep=0.4em,
+                   topsep=1.5pt,itemsep=0.5pt,parsep=0pt,partopsep=0pt]}
+  {\end{itemize}}
+
+% 5b. Indented date row (positions nested under an institution).
+\newlength{\cvindentamt}\setlength{\cvindentamt}{1.2em}
+\newcommand{\cvsubrow}[2]{%
+  \par\noindent\hspace*{\cvindentamt}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\cvindentamt-\cvdatewidth-0.6em\relax}%
+    \hyphenpenalty=10000\exhyphenpenalty=10000\RaggedRight #1%
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{\cvdatewidth}%
+    \raggedleft #2%
+  \end{minipage}%
+  \par}
+
+% Tight bullets nested under an indented entry.
+\newenvironment{cvbullets}
+  {\begin{itemize}[\textbullet,leftmargin=2.45em,labelsep=0.4em,
+                   topsep=1.5pt,itemsep=0.5pt,parsep=0pt,partopsep=0pt]}
+  {\end{itemize}}
+
+% 1. Hanging-indent block: one \item per entry; wrapped lines indent, so each
+%    year / label reads as a discrete unit. List-based (not \everypar) so the
+%    indent survives entries that open with a group such as {\bf 2027}.
+\newenvironment{cvhang}[1][1.5em]
+  {\RaggedRight
+   \begin{list}{}{%
+     \setlength{\leftmargin}{#1}%
+     \setlength{\itemindent}{-#1}%
+     \setlength{\labelwidth}{0pt}\setlength{\labelsep}{0pt}%
+     \setlength{\rightmargin}{0pt}%
+     \setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}%
+     \setlength{\parsep}{0pt}\setlength{\itemsep}{2.5pt}}}
+  {\end{list}}
+% =================================================================
+
 %%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -248,14 +331,19 @@
 % ALSO: \rcollength is the width of the right column of the table
 %       (adjust it to your liking; default is 1.85in).
 %
-\newlength{\rcollength}\setlength{\rcollength}{1.5in}%
-%
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-%\href{http://www.cse.osu.edu/}%
-   {Sidney Smith Hall} & \hspace{-1.4cm}   \hspace{.1cm} \small{+1-437-446-0050} \\
-100 St George Street,   &\hspace{-1.4cm}  \hspace{.1cm} \href{mailto:chagai.weiss@utoronto.ca}{\ttfamily{\small chagai.weiss@utoronto.ca}} \\
-Toronto, ON   &\hspace{-1.4cm} \hspace{.1cm} \href{https://www.chagaiweiss.com}{\ttfamily{\small www.chagaiweiss.com}}\\\\
-\end{tabular}\\
+\noindent
+\begin{minipage}[t]{0.50\linewidth}
+Sidney Smith Hall\\
+100 St George Street,\\
+Toronto, ON
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\raggedleft
+{\small +1-437-446-0050}\\
+\href{mailto:chagai.weiss@utoronto.ca}{\ttfamily{\small chagai.weiss@utoronto.ca}}\\
+\href{https://www.chagaiweiss.com}{\ttfamily{\small www.chagaiweiss.com}}
+\end{minipage}
 
 %\faPhone 
 %\faEnvelopeO
@@ -272,54 +360,36 @@ Toronto, ON   &\hspace{-1.4cm} \hspace{.1cm} \href{https://www.chagaiweiss.com}{
 %Ethnic Politics, Political Psychology, Intergroup Conflicts, Prejudice Reduction, Political Economy, Causal Inference \& Experimental Design \\
 
 
-
-
-
 \section{Appointments}
 \href{https://www.utoronto.ca/}{\textbf{The University of Toronto}}
-\begin{outerlist}
-\item[] Assistant Professor and Andrea \& Charles Bronfman Chair \hfill July 2025-- \\ \vspace{-.2in}
-        \begin{innerlist}
-\item \href{https://www.politics.utoronto.ca/}{Department of Political Science}  \\ \vspace{-.2in}
-\item \href{https://www.jewishstudies.utoronto.ca/}{Anne Tanenbaum Centre for Jewish Studies} 
-        \end{innerlist}
-%\href{https://kingcenter.stanford.edu}{King Center on Global Development} 
-\end{outerlist}\vspace{.1in}
+\cvsubrow{Assistant Professor and Andrea \& Charles Bronfman Chair in Israel Studies}{July 2025--}
+\begin{cvbullets}
+\item \href{https://www.politics.utoronto.ca/}{Department of Political Science}
+\item \href{https://www.jewishstudies.utoronto.ca/}{Anne Tanenbaum Centre for Jewish Studies}
+\end{cvbullets}
+\vspace{.06in}
 
-\href{http://stanford.org/}{\textbf{Stanford University}}
-\begin{outerlist}
-\item[] Affiliated Faculty, \href{https://www.pascl.stanford.edu/}{Politics and Social Change Lab} \hfill 2025- \\ \vspace{-.3in}
-\item[] Koret Postdoctoral Fellow, \href{https://www.pascl.stanford.edu/}{Politics and Social Change Lab} \hfill 2024-2025 \\ \vspace{-.3in}
-\item[] Postdoctoral Fellow, \href{https://kingcenter.stanford.edu/our-work/research-initiatives/conflict-and-polarization}{Conflict and Polarization Initiative} \hfill 2022-2024
-%\href{https://kingcenter.stanford.edu}{King Center on Global Development} 
-\end{outerlist}\vspace{.1in}
+\href{https://www.stanford.edu/}{\textbf{Stanford University}}
+\cvsubrow{Affiliated Faculty, \href{https://www.pascl.stanford.edu/}{Politics and Social Change Lab}}{2025--}
+\cvsubrow{Koret Postdoctoral Fellow, \href{https://www.pascl.stanford.edu/}{Politics and Social Change Lab}}{2024--2025}
+\cvsubrow{Postdoctoral Fellow, \href{https://kingcenter.stanford.edu/our-work/research-initiatives/conflict-and-polarization}{Conflict and Polarization Initiative}}{2022--2024}
+\vspace{.06in}
 \href{https://www.harvard.edu/}{\textbf{Harvard University}}
-\begin{outerlist}
-
-\item[] Middle East Initiative Predoctoral Fellow,
-        \href{https://www.belfercenter.org/project/middle-east-initiative}
-             {Harvard Kennedy School}
-           \hfill 2020-2022
-\end{outerlist}
+\cvsubrow{Middle East Initiative Predoctoral Fellow, \href{https://www.belfercenter.org/project/middle-east-initiative}{Harvard Kennedy School}}{2020--2022}
 
 
 \section{Education}
 
 \href{http://polisci.wisc.edu}{\textbf{The University of Wisconsin--Madison}}
-\begin{outerlist}
-
-\item[] Ph.D.,
-        \href{http://polisci.wisc.edu}
-             {Political Science}
-           \hfill 2022
-        \begin{innerlist}
-        \item \textbf{Dissertation:} Prejudice Reduction at Scale: How Institutional Inclusion Reduces Social Exclusion  
-                 \begin{itemize}[label=$\star$]
-		 \item \emph{Best Dissertation in Comparative Politics Award}, UW-Madison (2022)
-		\end{itemize}      
+\cvsubrow{Ph.D., \href{http://polisci.wisc.edu}{Political Science}}{2022}
+\begin{cvbullets}
+        \item \textbf{Dissertation:} Prejudice Reduction at Scale: How Institutional Inclusion Reduces Social Exclusion
+                 \begin{cvnotes}
+		 \item \emph{Best Dissertation in Comparative Politics Award}, UW--Madison (2022)
+		\end{cvnotes}
      %   \item \textbf{Committee:} Rikhil Bhavnani (\emph{Chair}), Yoshiko Herrera, Nadav Shelef, and Jonathan Renshon
         \item \textbf{Fields:} Comparative Politics, International Relations, Political Methodology (\emph{minor})
-        \end{innerlist}
+        \end{cvbullets}
 
 %\item[] M.S.,
    %     \href{http://www.sph.umn.edu/biostatistics/}
@@ -336,31 +406,23 @@ Toronto, ON   &\hspace{-1.4cm} \hspace{.1cm} \href{https://www.chagaiweiss.com}{
 %%\vspace{.1in}
 %\href{http://polisci.wisc.edu}{\textbf{The University of Wisconsin - Madison}}
 %\begin{outerlist}
-\item[] M.A.,
-        \href{http://polisci.wisc.edu}
-             {Political Science} \hfill {2018}
-\end{outerlist}  \vspace{.1in}
+\vspace{.04in}
+\cvsubrow{M.A., \href{http://polisci.wisc.edu}{Political Science}}{2018}
+\vspace{.06in}
 
 \href{http://new.huji.ac.il/en}{\textbf{The Hebrew University of Jerusalem}}
-\begin{outerlist}
-\item[] B.A.,
-        \href{https://en.politics.huji.ac.il/}
-             {Political Science \& Middle Eastern Studies} \hfill { 2016}
-        \begin{innerlist}
+\cvsubrow{B.A., \href{https://en.politics.huji.ac.il/}{Political Science \& Middle Eastern Studies}}{2016}
+\begin{cvbullets}
         \item \emph{cum laude}
-        \end{innerlist}
-
-\end{outerlist}
-
+\end{cvbullets}
 
 
 \section{Books}
 
-\textbf{Weiss, Chagai M.} ``\href{https://press.princeton.edu/books/paperback/9780691263083/delivering-tolerance}{Delivering Tolerance: How Unintended Institutional Inclusion Reduces Prejudice.}"  \textbf{Princeton University Press}, \emph{Studies in Political Behavior Series} (2026).\\
-
-Brutger, Ryan, Joshua D. Kertzer, Jonathan Renshon, and \textbf{Chagai M. Weiss}. ``\href{https://www.cambridge.org/core/elements/abs/abstraction-in-survey-experiments/9B21F5D1B9158659A2009E7C4450CA3B}{Abstraction in Experimental Design: Testing the Tradeoffs.}" \textbf{Cambridge University Press}, \emph{Elements in Experimental Political Science Series} (2022).\\
-
-
+\begin{cvpubs}{2}
+\item \textbf{Weiss, Chagai M.} ``\href{https://press.princeton.edu/books/paperback/9780691263083/delivering-tolerance}{Delivering Tolerance: How Unintended Institutional Inclusion Reduces Prejudice.}''  \textbf{Princeton University Press}, \emph{Princeton Studies in Political Behavior} (2026).
+\item Brutger, Ryan, Joshua D. Kertzer, Jonathan Renshon, and \textbf{Chagai M. Weiss}. ``\href{https://www.cambridge.org/core/elements/abs/abstraction-in-survey-experiments/9B21F5D1B9158659A2009E7C4450CA3B}{Abstraction in Experimental Design: Testing the Tradeoffs.}'' \textbf{Cambridge University Press}, \emph{Elements in Experimental Political Science} (2022).
+\end{cvpubs}
 
 %\begin{itemize}
 %\item []Brutger, Ryan, Joshua D. Kertzer, Jonathan Renshon, \& \textbf{Chagai M. Weiss}. ``Abstraction in Experimental Design: Testing the Tradeoffs," Forthcoming in \emph{Cambridge University Press, Elements in Experimental Political Science series} (edited by James Druckman).
@@ -368,102 +430,80 @@ Brutger, Ryan, Joshua D. Kertzer, Jonathan Renshon, and \textbf{Chagai M. Weiss}
     %   Paper: \href{https://www.dropbox.com/s/fcex2xux2fq9jfn/abstract-concrete-nyu-new.pdf?dl=0}{\faFilePdfO}
 %\end{itemize}
 
-
-
 \section{Peer-Reviewed Publications}
-\textbf{Weiss, Chagai M.}, Donald Green, and Robb Willer. ``\href{https://osf.io/preprints/osf/5qxyw\_v1}{Can Politicians Bridge Partisan Divides? Evidence from a Field Experiment with the U.S. National Governors Association.} Accepted for publication at \emph{The American Journal of Political Science}."
-\begin{itemize}[label=$\star$]
+
+\begin{cvpubs}{16}
+\item \textbf{Weiss, Chagai M.}, Donald Green, and Robb Willer. ``\href{https://osf.io/preprints/osf/5qxyw\_v1}{Can Politicians Bridge Partisan Divides? Evidence from a Field Experiment with the U.S. National Governors Association.}'' Accepted for publication at \emph{American Journal of Political Science}.
+\begin{cvnotes}
     \item \emph{Analyst Institute Expy Award for Bridging Research and Practice} (2025)
-\end{itemize}
-
-\textbf{Weiss, Chagai M.}, Alexandra Scacco, and Alexandra Siegel. ``\href{https://www.chagaiweiss.com/papers/inprogress/ssw_updated.pdf}{Outgroup Avoidance.}" Forthcoming in \emph{The Journal of Politics}.\\
-
-Bassan-Nygate, Lotem, Jonathan Renshon, Jessica Weeks, and \textbf{Chagai M. Weiss}. ``\href{https://www.cambridge.org/core/journals/american-political-science-review/article/generalizability-of-ir-experiments-beyond-the-united-states/263CE4FF8EA7AAEC76A176BF3E05626C}{The Generalizability of IR Experiments Beyond the U.S.}" Forthcoming in \emph{The American Political Science Review}.\\
-
-Jha, Saumitra, Moses Shayo, and \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/jsw_wp.pdf}{Financial Market Participation Increases Generalized Trust, Particularly Among the Politically Polarized.}" \emph{The Journal of Public Economics}, 242 (2025).
-\begin{itemize}[label=$\bullet$]
+\end{cvnotes}
+\item \textbf{Weiss, Chagai M.}, Alexandra Scacco, and Alexandra Siegel. ``\href{https://www.chagaiweiss.com/papers/inprogress/ssw_updated.pdf}{Outgroup Avoidance.}'' Forthcoming in \emph{Journal of Politics}.
+\item Bassan-Nygate, Lotem, Jonathan Renshon, Jessica Weeks, and \textbf{Chagai M. Weiss}. ``\href{https://www.cambridge.org/core/journals/american-political-science-review/article/generalizability-of-ir-experiments-beyond-the-united-states/263CE4FF8EA7AAEC76A176BF3E05626C}{The Generalizability of IR Experiments Beyond the U.S.}'' Forthcoming in \emph{American Political Science Review}.
+\item Jha, Saumitra, Moses Shayo, and \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/jsw_wp.pdf}{Financial Market Participation Increases Generalized Trust, Particularly Among the Politically Polarized.}'' \emph{Journal of Public Economics}, 242 (2025).
+\begin{cvnotes}[$\bullet$]
     \item \emph{Stanford GSB Working Paper No. 4083}
-\end{itemize}
-
-Kao, Kristen, Ellen Lust, Marwa Shalaby, and \textbf{Chagai M. Weiss}. ``\href{https://www.cambridge.org/core/services/aop-cambridge-core/content/view/15DE6206F7E5D3D9707D590B81A40C58/S0003055423000357a.pdf/female_representation_and_legitimacy_evidence_from_a_harmonized_experiment_in_jordan_morocco_and_tunisia.pdf}{Group Gender Composition and Perceptions of Legitimacy.}" \emph{The American Political Science Review}, 118(1) (2024).\\
-
-\textbf{Weiss, Chagai M.}, Eran Halperin, and Shira Ran. ``\href{https://www.pnas.org/doi/10.1073/pnas.2218621120}{Educating for Inclusion: Diversity Education Programs Can Reduce Prejudice Toward Outgroups in Israel.}" \emph{Proceedings of the National Academy of Sciences}, 120(16) (2023).
-\begin{itemize}[label=$\star$]
+\end{cvnotes}
+\item Kao, Kristen, Ellen Lust, Marwa Shalaby, and \textbf{Chagai M. Weiss}. ``\href{https://www.cambridge.org/core/services/aop-cambridge-core/content/view/15DE6206F7E5D3D9707D590B81A40C58/S0003055423000357a.pdf/female_representation_and_legitimacy_evidence_from_a_harmonized_experiment_in_jordan_morocco_and_tunisia.pdf}{Group Gender Composition and Perceptions of Legitimacy.}'' \emph{American Political Science Review}, 118(1) (2024).
+\item \textbf{Weiss, Chagai M.}, Neal Tsur, Dan Miodownik, Yonatan Lupu, and Evgeny Finkel. ``\href{https://www.cambridge.org/core/journals/political-science-research-and-methods/article/atypical-violence-and-conflict-dynamics-evidence-from-jerusalem/689731DDDA2C0B9C818911C86B472460}{Atypical Violence and Conflict Dynamics: Evidence from Jerusalem.}'' \emph{Political Science Research and Methods}, 12(2) (2024).
+\item \textbf{Weiss, Chagai M.}, Eran Halperin, and Shira Ran. ``\href{https://www.pnas.org/doi/10.1073/pnas.2218621120}{Educating for Inclusion: Diversity Education Programs Can Reduce Prejudice Toward Outgroups in Israel.}'' \emph{Proceedings of the National Academy of Sciences}, 120(16) (2023).
+\begin{cvnotes}
     \item \emph{APSA Experimental Research Section Best Paper Award} (2023)
-\end{itemize}
-
-Peyton, Kyle, \textbf{Chagai M. Weiss}, and Paige Vaughn. ``\href{https://www.pnas.org/doi/10.1073/pnas.2213986119}{Beliefs About Minority Representation in Policing and Preferences for Increasing Officer Diversity.}" \emph{Proceedings of the National Academy of Sciences}, 119(52) (2022).
-\begin{itemize}[label=$\star$]
+\end{cvnotes}
+\item \textbf{Weiss, Chagai M.}, Alexandra Siegel, and David Romney. ``\href{https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12718}{How Threats of Exclusion Mobilize Palestinian Political Participation.}'' \emph{American Journal of Political Science}, 67(4) (2023).
+\item Brutger, Ryan, Joshua D. Kertzer, Jonathan Renshon, Dustin Tingley, and \textbf{Chagai M. Weiss}. ``\href{https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12710}{Abstraction and Detail in Experimental Design.}'' \emph{American Journal of Political Science}, 67(4) (2023).
+\item Getmansky, Anna, and \textbf{Chagai M. Weiss}. ``\href{https://journals.sagepub.com/doi/10.1177/00104140221141837}{Wartime Military Service Can Affect Partisan Preferences.}'' \emph{Comparative Political Studies}, 56(10) (2023).
+\item Getmansky, Anna, and \textbf{Chagai M. Weiss}. ``\href{https://journals.sagepub.com/doi/10.1177/00220027221114086}{Interstate Conflict Can Reduce Support for Incumbents: Evidence from the Israeli Electorate and the Yom Kippur War.}'' \emph{Journal of Conflict Resolution}, 67(2-3) (2023).
+\item Peyton, Kyle, \textbf{Chagai M. Weiss}, and Paige Vaughn. ``\href{https://www.pnas.org/doi/10.1073/pnas.2213986119}{Beliefs About Minority Representation in Policing and Preferences for Increasing Officer Diversity.}'' \emph{Proceedings of the National Academy of Sciences}, 119(52) (2022).
+\begin{cvnotes}
     \item \emph{MPSA Lucius Barker Award} (2023)
-\end{itemize}
-
-\textbf{Weiss, Chagai M.}, Alexandra Siegel, and David Romney. ``\href{https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12718}{How Threats of Exclusion Mobilize Palestinian Political Participation.}" \emph{The American Journal of Political Science}, 67(4) (2023).\\
-
-Brutger, Ryan, Joshua D. Kertzer, Jonathan Renshon, Dustin Tingley, and \textbf{Chagai M. Weiss}. ``\href{https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12710}{Abstraction and Detail in Experimental Design.}" \emph{The American Journal of Political Science}, 67(4) (2023).\\
-
-Getmansky, Anna, and \textbf{Chagai M. Weiss}. ``\href{https://journals.sagepub.com/doi/10.1177/00104140221141837}{Wartime Military Service Can Affect Partisan Preferences.}" \emph{Comparative Political Studies}, 56(10) (2023).\\
-
-\textbf{Weiss, Chagai M.}, Neal Tsur, Dan Miodownik, Yonatan Lupu, and Evgeny Finkel. ``\href{https://www.cambridge.org/core/journals/political-science-research-and-methods/article/atypical-violence-and-conflict-dynamics-evidence-from-jerusalem/689731DDDA2C0B9C818911C86B472460}{Atypical Violence and Conflict Dynamics: Evidence from Jerusalem.}" \emph{Political Science Research and Methods}, 12(2) (2024).\\
-
-Getmansky, Anna, and \textbf{Chagai M. Weiss}. ``\href{https://journals.sagepub.com/doi/10.1177/00220027221114086}{Interstate Conflict Can Reduce Support for Incumbents: Evidence from the Israeli Electorate and the Yom Kippur War.}" \emph{The Journal of Conflict Resolution}, 67(2) (2023).\\
-
-\textbf{Weiss, Chagai M.}. ``\href{https://www.pnas.org/content/118/14/e2022634118}{Diversity in Health Care Institutions Reduces Israeli Patients' Prejudice Toward Arabs.}" \emph{Proceedings of the National Academy of Sciences}, 118(14) (2021).
-\begin{itemize}[label=$\star$]
+\end{cvnotes}
+\item Bassan-Nygate, Lotem, and \textbf{Chagai M. Weiss}. ``\href{https://journals.sagepub.com/doi/full/10.1177/00104140211024283}{Party Competition and Cooperation Shape Affective Polarization: Evidence from Natural and Survey Experiments in Israel.}'' \emph{Comparative Political Studies}, 55(2) (2022).
+\begin{cvnotes}
+    \item \emph{George and Sylvia Laikin Prize, UW--Madison} (2021)
+    \item \emph{Mildred Potter Hovland Journal Article Prize, UW--Madison} (2021)
+\end{cvnotes}
+\item \textbf{Weiss, Chagai M.}. ``\href{https://www.pnas.org/content/118/14/e2022634118}{Diversity in Health Care Institutions Reduces Israeli Patients' Prejudice Toward Arabs.}'' \emph{Proceedings of the National Academy of Sciences}, 118(14) (2021).
+\begin{cvnotes}
     \item \emph{APSA Conflict Processes Best Paper Award} (2019)
-    \item \emph{Genevieve Gorst Herfurth Award, Honorable Mention, UW–Madison} (2021)
-\end{itemize}
-
-Bassan-Nygate, Lotem, and \textbf{Chagai M. Weiss}. ``\href{https://journals.sagepub.com/doi/full/10.1177/00104140211024283}{Party Competition and Cooperation Shape Affective Polarization: Evidence from Natural and Survey Experiments in Israel.}" \emph{Comparative Political Studies}, 55(2) (2020): 287–319.
-\begin{itemize}[label=$\star$]
-    \item \emph{George and Sylvia Laikin Prize, UW–Madison} (2021)
-    \item \emph{Mildred Potter Hovland Journal Article Prize, UW–Madison} (2021)
-\end{itemize}
-
-Gilad, Sharon, Saar Alon-Barkat, and \textbf{Chagai M. Weiss}. ``\href{https://onlinelibrary.wiley.com/doi/abs/10.1111/gove.12383}{Political and Bureaucratic Translation of Social Movement Demands: The Case of Israel's 2011 Social Protest.}" \emph{Governance}, 32(2) (2019): 369–385.\\
-
-Rock, Jonathan, \textbf{Chagai M. Weiss}, and Dan Miodownik. ``\href{https://www.sciencedirect.com/science/article/pii/S0962629817303323}{Geographies of Violence in Jerusalem: The Spatial Logic of Intergroup Conflict.}" \emph{Political Geography}, 66 (2018): 88–97.
+    \item \emph{Genevieve Gorst Herfurth Award, Honorable Mention, UW--Madison} (2021)
+\end{cvnotes}
+\item Gilad, Sharon, Saar Alon-Barkat, and \textbf{Chagai M. Weiss}. ``\href{https://onlinelibrary.wiley.com/doi/abs/10.1111/gove.12383}{Political and Bureaucratic Translation of Social Movement Demands: The Case of Israel's 2011 Social Protest.}'' \emph{Governance}, 32(2) (2019).
+\item Rock, Jonathan, \textbf{Chagai M. Weiss}, and Dan Miodownik. ``\href{https://www.sciencedirect.com/science/article/pii/S0962629817303323}{Geographies of Violence in Jerusalem: The Spatial Logic of Intergroup Conflict.}'' \emph{Political Geography}, 66 (2018).
+\end{cvpubs}
 
 %\begin{itemize}
    %          \item[] \textbf{Weiss, Chagai M.}, Alexandra Siegel, \& David Romney ``\href{https://www.chagaiweiss.com/papers/published/DoC_AJPS_preprint.pdf}{How Threats of Exclusion Mobilize Palestinian Political Participation.}" \emph{The American Journal of Political Science}, Forthcoming.
-             
+
         %       \item[] Brutger, Ryan, Joshua D. Kertzer, Jonathan Renshon, Dustin Tingley, \& \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/published/bkrtw_ajps_preprint.pdf}{Abstraction and Detail in Experimental Design.}" \emph{The American Journal of Political Science}, Forthcoming.
-               
+
  %\item[] \textbf{Weiss, Chagai M.}. ``\href{https://www.pnas.org/content/118/14/e2022634118}{Diversity in Health Care Institutions Reduces Israeli Patients' Prejudice toward Arabs}." \emph{Proceedings of the National Academy of Sciences} 118.14 (2021).
 % \begin{itemize}[label=$\star$]
  %\item \emph{APSA Conflict Processes Best Paper Award} (2019)
  %\item \emph{Genevieve Gorst Herfurth Award Honorable Mention, UW-Madison} (2021)
  %\end{itemize}
- 
+
 % \item[] Bassan-Nygate, Lotem \& \textbf{Chagai M. Weiss}. ``\href{https://journals.sagepub.com/doi/full/10.1177/00104140211024283}{Party Competition and Cooperation Shape Affective Polarization: Evidence from Natural and Survey Experiments in Israel.}" \emph{Comparative Political Studies} 55.2 (2020): 287-319.
 %    \begin{itemize}[label=$\star$]
  %\item \emph{George \& Sylvia Laikin Prize, UW-Madison} (2021)
   %\item \emph{Mildred Potter Hovland Journal Article Prize, UW-Madison} (2021)
  %\end{itemize}
- 
+
  %   \item[] Gilad, Sharon, Saar Alon-Barkat \& \textbf{Chagai M. Weiss}. ``\href{https://onlinelibrary.wiley.com/doi/abs/10.1111/gove.12383}{Political and Bureaucratic Translation of Social Movement Demands: The Case of Israel's 2011 Social Protest.}" \textit{Governance} 32.2 (2019): 369--385.
-    
+
 %   \item[] Rock, Jonathan, \textbf{Chagai M. Weiss} \& Dan Miodownik. ``\href{https://www.sciencedirect.com/science/article/pii/S0962629817303323}{Geographies of Violence in Jerusalem: The Spatial Logic of Intergroup Conflict.}" \textit{Political Geography} 66 (2018): 88--97.
 %     \end{itemize}
 
-
 \section{Working Papers}
-\vspace{.05in}
 
-Siegel, Alexandra, and \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/sw_media_attacks.pdf}{Polarizing Effects of Attacks on the Press: Evidence from Israel.}" Invited to revise and resubmit at \emph{The American Political Science Review}.\\
-
-\textbf{Chagai M. Weiss}, Sascha Riaz, Julie Cachia, and Xuan Zhao. ``Does Reducing Psychological Distress Increase Support for Liberal Democracy?" Invited to revise and resubmit as regisetred report at \emph{The American Political Science Review}.\\
-
-
-
-\textbf{Weiss, Chagai M.} ``\href{https://www.chagaiweiss.com/papers/inprogress/cmw_prejudice_review.pdf}{Prejudice: Causes, Effects, and Remedies.}" In preparation for \emph{The Annual Review of Political Science}.\\
-
-
-
-Hanlon, Michele, Saumitra Jha, Namrata Kala, Nemit Shroff, and \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/hjksw_wp.pdf}{Seeing Green: The Effects of Financial Exposure on Climate Beliefs and Political Attitudes.}"
-\begin{itemize}[label=$\bullet$]
+\begin{cvpubs}{4}
+\item Siegel, Alexandra, and \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/sw_media_attacks.pdf}{Polarizing Effects of Attacks on the Press: Evidence from Israel.}'' Invited to revise and resubmit at \emph{American Political Science Review}.
+\item \textbf{Weiss, Chagai M.}, Sascha Riaz, Julie Cachia, and Xuan Zhao. ``Does Reducing Psychological Distress Increase Support for Liberal Democracy?'' Invited to revise and resubmit as a registered report at \emph{American Political Science Review}.
+\item \textbf{Weiss, Chagai M.} ``\href{https://www.chagaiweiss.com/papers/inprogress/cmw_prejudice_review.pdf}{Prejudice: Causes, Effects, and Remedies.}'' In preparation for \emph{Annual Review of Political Science}.
+\item Hanlon, Michelle, Saumitra Jha, Namrata Kala, Nemit Shroff, and \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/hjksw_wp.pdf}{Seeing Green: The Effects of Financial Exposures on Support for Climate Action.}''
+\begin{cvnotes}[$\bullet$]
     \item \emph{\href{https://www.nber.org/papers/w34828}{NBER Working Paper No. 34828}}
-\end{itemize}\vspace{-.2in}
-
+\end{cvnotes}
+\end{cvpubs}
 
 %\textbf{Weiss, Chagai M.} ``\href{https://www.chagaiweiss.com/papers/inprogress/weiss_conscription.pdf}{Compulsory Military Service Reduces Affective Polarization: Evidence from Conscription Reforms in Europe.}" \\
 
@@ -472,35 +512,25 @@ Hanlon, Michele, Saumitra Jha, Namrata Kala, Nemit Shroff, and \textbf{Chagai M.
  %\item \emph{Harvard Kennedy School MEI Working Paper, August 2021}.
 %	 \end{itemize} 	
 
-
-
 \section{In Progress}
-\vspace{.1in}
 
-\textbf{Weiss, Chagai M.}, Zeynep Biyikli, Michael Baumer, Donald Green, James Slezak, and Robb Willer. ``Persuasion at Scale: Evidence from Meta-Analyses of Proprietary Experiments and Addressable TV RCTs."\\
+\begin{cvpubs}{4}
+\item \textbf{Weiss, Chagai M.}, Zeynep Biyikli, Michael Baumer, Donald Green, James Slezak, and Robb Willer. ``Persuasion at Scale: Evidence from Meta-Analyses of Proprietary Experiments and Addressable TV RCTs.''
+\item Hilbig, Hanno, and \textbf{Chagai M. Weiss}. ``Resisting Integration: How Religious Minorities React to Threats of Conscription.''
+\item Riaz, Sascha, and \textbf{Chagai M. Weiss}. ``The Political Salience of the Israeli--Palestinian Conflict: Evidence from 4.1 million parliamentary speeches around the world.'' 
+\item Dinas, Elias, Vasiliki Fouka, and \textbf{Chagai M. Weiss}. ``The Evolution of Minority Group Social Norms: Evidence from the Jewish Responsa.''
+\end{cvpubs}
 
-
-Hilbig, Hanno, and \textbf{Chagai M. Weiss}. ``Resisting Integration: How Religious Minorities React to Threats of Conscription."\\
-
-Riaz, Sascha, and \textbf{Chagai M. Weiss}. ``The Political Salience of the Israeli Palestinian Conflict: Evidence from 4.1 million parliamentary speeches around the World." \\
-
-
-Dinas, Elias, Vasiliki, Fouka, and \textbf{Chagai M. Weiss}. ``The Evolution of Minority Group Social Norms: Evidence from the Jewish Responsa."
-
-
-
- 
 %\begin{itemize}
 
    %      \item[] Getmansky, Anna \& \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/yk1.pdf}{Pyrrhic Victory: How and Why Wars Affect Political Attitudes and Behavior.}" (Conditionally accepted at \emph{The Journal of Conflict Resolution}).
-               
 
     %     \item[] \textbf{Weiss, Chagai M.}, Neal Tsur, Dan Miodownik, Yonatan Lupu, and Evgeny Finkel. ``\href{https://www.chagaiweiss.com/papers/inprogress/ah_rr_psrm.pdf}{Atypical Violence and Conflict Dynamics: Evidence from Jerusalem}." (Conditionally accepted at \emph{Political Science Research and Methods}).
- 
+
          %        \item[] Getmansky, Anna \& \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/yk2_v6.pdf}{War Time Military Service Can Affect Partisan Preferences.}" (Invited to revise and resubmit at \emph{Comparative Political Studies}).
-     
+
               %         \item[] \textbf{Weiss, Chagai M.}, Eran Halperin, Shira Ran. ``\href{https://www.chagaiweiss.com/papers/inprogress/wrh_paper_v5.pdf}{Broaching Prejudicial Taboos to Improve Intergroup Relations: A field Experiment in Israel.}" 
-                       
+
 %	  \item[] Kao, Kristen, Ellen Lust, Marwa Shalaby \& \textbf{Chagai M. Weiss}. ``\href{https://www.chagaiweiss.com/papers/inprogress/klsw_gender.pdf}{Group Gender Composition and Perceptions of Legitimacy.}" (Under Review).                 
 
      %   \item[] \textbf{Weiss, Chagai M.}. ``\href{https://static1.squarespace.com/static/5bda793b0dbda3f980201462/t/612d4b65135ba31ae519112a/1630358374769/mei_diveristy.pdf}{Minority Representation in Healthcare Provision Reduces Prejudice: Evidence from the COVID-19 Crises in Israel and the U.S.}"
@@ -508,8 +538,6 @@ Dinas, Elias, Vasiliki, Fouka, and \textbf{Chagai M. Weiss}. ``The Evolution of 
  %\item \emph{Middle East Initiative Working Paper, August 2021}.
 %	 \end{itemize} 	 
 %\end{itemize}
-
-
 
 %\section{Work In Progress}
 %\vspace{-.125in}
@@ -539,163 +567,113 @@ Dinas, Elias, Vasiliki, Fouka, and \textbf{Chagai M. Weiss}. ``The Evolution of 
   
 
 \section{Other Publications}
-\vspace{.1in}
 
-\textbf{Weiss, Chagai M.} ``Group Identity, Ingroups, and Their Implications." In \emph{Handbook of Innovations in Political Psychology}, edited by Ethan C. Busby, Christopher F. Karpowitz, and Cara J. Wong. Edward Elgar Press, 2024.\\
-
-Littman, Rebecca, Alexandra Scacco, and \textbf{Chagai M. Weiss}. ``Reducing Prejudice through Intergroup Contact Interventions." In \emph{Psychological Intergroup Interventions}. Routledge, 2024.\\
-
-Shalaby, Marwa, \textbf{Chagai M. Weiss}, Ellen Lust, Kristen Kao, and coauthors. ``\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3741934}{The Dynamics of Decentralization in the MENA: Processes, Outcomes, and Obstacles.}" \textit{Program on Governance and Local Development Working Paper No. 31}.\\
-
-\textbf{Weiss, Chagai M.} ``\href{https://www.comparativepoliticsnewsletter.org/wp-content/uploads/2020/06/Spring-Newsletter-2020_11_Weiss.pdf}{Sharing Spaces: Segregation, Integration, and Intergroup Relations.}" \textit{APSA Comparative Politics Newsletter}, Spring 2020.\\
-
-Bassan-Nygate, Lotem, and \textbf{Chagai M. Weiss}. ``\href{https://apsamena.org/2020/11/19/its-us-or-them-partisan-polarization-in-israel-and-beyond/}{It's Us or Them: Partisan Polarization in Israel and Beyond.}" \textit{APSA MENA Newsletter}, Spring 2020.\\
-
-\textbf{Weiss, Chagai M.} ``\href{https://pomeps.org/segregation-integration-and-intergroup-relations-in-israel}{Segregation, Integration, and Intergroup Relations in Israel.}" \emph{POMEPS Working Paper}, Fall 2020.
+\begin{cvpubs}{6}
+\item \textbf{Weiss, Chagai M.} ``Group Identity, Ingroups, and Their Implications.'' In \emph{Handbook of Innovations in Political Psychology}, edited by Ethan C. Busby, Christopher F. Karpowitz, and Cara J. Wong. Edward Elgar Publishing, 2024.
+\item Littman, Rebecca, Alexandra Scacco, and \textbf{Chagai M. Weiss}. ``Reducing Prejudice through Intergroup Contact Interventions.'' In \emph{Psychological Intergroup Interventions}. Routledge, 2024.
+\item Shalaby, Marwa, \textbf{Chagai M. Weiss}, Ellen Lust, Kristen Kao, and coauthors. ``\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3741934}{The Dynamics of Decentralization in the MENA: Processes, Outcomes, and Obstacles.}'' \textit{Program on Governance and Local Development Working Paper No. 31}.
+\item \textbf{Weiss, Chagai M.} ``\href{https://www.comparativepoliticsnewsletter.org/wp-content/uploads/2020/06/Spring-Newsletter-2020_11_Weiss.pdf}{Sharing Spaces: Segregation, Integration, and Intergroup Relations.}'' \textit{APSA Comparative Politics Newsletter}, Spring 2020.
+\item Bassan-Nygate, Lotem, and \textbf{Chagai M. Weiss}. ``\href{https://apsamena.org/2020/11/19/its-us-or-them-partisan-polarization-in-israel-and-beyond/}{It's Us or Them: Partisan Polarization in Israel and Beyond.}'' \textit{APSA MENA Newsletter}, Spring 2020.
+\item \textbf{Weiss, Chagai M.} ``\href{https://pomeps.org/segregation-integration-and-intergroup-relations-in-israel}{Segregation, Integration, and Intergroup Relations in Israel.}'' \emph{POMEPS Working Paper}, Fall 2020.
 %\begin{itemize}
    % \item[] Marwa Shalaby, \textbf{Chagai Weiss}, Ellen Lust, Kristen Kao, and coauthors, ``\href{https://papers.ssrn.com/sol3/papers.cfm?abstract\_id=3741934}{The Dynamics of Decentralization in the MENA: Processes, Outcomes, and Obstacles.}" \textit{Program on Governance and Local Development Working Paper No. 31.}    \item[]  \textbf{Weiss, Chagai M.}. ``\href{https://chagaimweiss.com/s/APSA_Newsletter.pdf}{Sharing Spaces: Segregation, Integration, and Intergroup Relations.}" \textit{APSA Comparative Politics Newsletter}, Spring 2020.
   %\item[]  Bassan-Nygete, Lotem \& \textbf{Chagai M. Weiss}. ``\href{https://static1.squarespace.com/static/5bda793b0dbda3f980201462/t/5ed5271d00577d3c5b10d27c/1591027491231/BW_MENA.pdf}{It's Us or Them: Partisan Polarization in Israel and Beyond.}" \textit{APSA MENA Newsletter}, Spring 2020.
   %\item[] \textbf{Weiss, Chagai M.}. ``\href{https://pomeps.org/segregation-integration-and-intergroup-relations-in-israel}{Segregation, Integration, and Intergroup Relations in Israel.}" \emph{POMEPS Working Paper}, Fall 2020. 
-     %  \end{itemize}
-%3A10.7910%2FDVN%2FYLLX8V
+     %  \end{cvnotes}%3A10.7910%2FDVN%2FYLLX8V
 % Add a little space to nudge next ``Conference Publications'' marginpar
 % down to make room for tall ``Submitted Journal Publications''
 % marginpar. If there are enough submitted journal publications, this
 % space will not be needed (and should be removed).
 %\vspace{0.1in}
-
-
-
+\end{cvpubs}
 
 \section{Selected Outreach}
-\vspace{.1in}
+\begin{cvhang}
+\item \href{https://www.gsb.stanford.edu/insights/another-payoff-trading-stocks-reducing-political-polarization}{``Another payoff from trading stocks: Reducing political polarization.''} \emph{Stanford Graduate School of Business Insights}, August 2023.
 
-\href{https://www.gsb.stanford.edu/insights/another-payoff-trading-stocks-reducing-political-polarization}{“Another payoff from trading stocks: Reducing political polarization.”} \emph{Stanford Graduate School of Business Insights}, August 2023.
+\item \href{https://www.kan.org.il/content/kan-news/newstv/p-591147/s1/362092/}{``The Experiment that Revealed: Watching this Show Reduces Prejudice.''} \emph{KAN News (Israel)}, 2023.
 
-\href{https://www.kan.org.il/content/kan-news/newstv/p-591147/s1/362092/}{The Experiment that Revealed: Watching this Show Reduces Prejudice} \emph{KAN News (Israel)}, 2023.
+\item \href{https://www.washingtonpost.com/politics/2020/02/27/israels-voting-3rd-time-year-thats-polarizing-voters-even-more/}{``Israel is voting---for the third time in a year. That's polarizing voters even more.''} \emph{The Monkey Cage}, February 2020. (With Lotem Bassan-Nygate).
 
-\href{https://www.washingtonpost.com/politics/2020/02/27/israels-voting-3rd-time-year-thats-polarizing-voters-even-more/}{“Israel is voting—for the third time in a year. That’s polarizing voters even more.”} \emph{The Monkey Cage}, February 2020. (With Lotem Bassan-Nygate).
+\item \href{https://beta.washingtonpost.com/politics/2019/09/13/an-hbo-series-looks-political-violence-jerusalem-data-shows-that-its-right-track/}{``An HBO series looks at political violence in Jerusalem. Here's the reality behind the drama.''} \emph{The Monkey Cage}, September 2019.
 
-\href{https://beta.washingtonpost.com/politics/2019/09/13/an-hbo-series-looks-political-violence-jerusalem-data-shows-that-its-right-track/}{“An HBO series looks at political violence in Jerusalem. Here’s the reality behind the drama.”} \emph{The Monkey Cage}, September 2019.
-
-\href{https://www.washingtonpost.com/news/monkey-cage/wp/2018/12/04/how-might-recent-confrontations-with-hamas-influence-israeli-elections/?utm_term=.ef8bb33be23b}{“How might recent confrontations with Hamas influence Israeli elections?”} \emph{The Monkey Cage}, December 2018.
-
-\vspace*{-3mm}
-
+\item \href{https://www.washingtonpost.com/news/monkey-cage/wp/2018/12/04/how-might-recent-confrontations-with-hamas-influence-israeli-elections/?utm_term=.ef8bb33be23b}{``How might recent confrontations with Hamas influence Israeli elections?''} \emph{The Monkey Cage}, December 2018.
+\end{cvhang}
 
 \section{Invited Talks}
-\vspace{.1in}
-{\bf 2027}: \textbf{OSU}, \emph{Identity and Politics Speaker Series}, \textbf{Harvard}, \emph{WoGPoP}.\\
-{\bf 2026}: \textbf{Columbia}, \emph{Media Effects Empirical Workshop}, \textbf{McGill University}, \emph{Center for the Study of Democratic Citizenship}, \textbf{Georgetowen}, \emph{Mortara Research Seminar}.\\
-{\bf 2025}: \textbf{UC Berkeley}, \emph{Citrin Center for Public Opinion Research}, \textbf{UCLA}, \emph{Department of Political Science}, \textbf{BYU}, \emph{Initiative for Peacemaking}, \textbf{UCLA}, \emph{Nazarian Center for Israel Studies}.\\
-{\bf 2024}: \textbf{Princeton}, \emph{Center for the Study of Democratic Politics}, \textbf{Meta}, \emph{Computational Social Science Seminar}, \textbf{Princeton}, \emph{Program on Race, Ethnicity, and Identity in Politics}, \textbf{CEGA, ESOC, and U.N. Behavioral Insights}, \emph{Roundtable on Engineering Peace}, \textbf{National Institute for Civil Discourse}, \emph{Community Briefing on Effective Depolarization Interventions}..\\
-{\bf 2023}: \textbf{Stanford}, \emph{Identity Politics Seminar}, \textbf{UC Berkeley}, \emph{IR Speaker Series}, \textbf{Stanford}, \emph{Polarization and Social Change Lab}, \textbf{WashU}, \emph{10th Comparative Politics Annual Conference}, \textbf{Stanford}, \emph{CDDRL Speaker Series}, \textbf{Harvard}, \emph{Weatherhead Research Cluster on Identity Politics},  \textbf{UPenn}, \emph{Comparative Politics Workshop}. 
+\begin{cvhang}
+\item {\bf 2027}: \textbf{OSU}, \emph{Identity and Politics Speaker Series}, \textbf{Harvard}, \emph{WoGPoP}.
 
-{\bf 2022}: \textbf{UC Irvine}, \emph{Department of Political Science, Survey Methodology Seminar}, \textbf{Harvard}, \emph{Department of Psychology}.\vspace{.01in}
+\item {\bf 2026}: \textbf{Columbia}, \emph{Media Effects Empirical Workshop}, \textbf{McGill University}, \emph{Center for the Study of Democratic Citizenship}, \textbf{Georgetown}, \emph{Mortara Research Seminar}.
 
-{\bf 2021}: \textbf{Hebrew University} (Israel), \emph{PCIR Lab}, \textbf{Harvard}, \emph{Cushman-Greene Lab}.\vspace{.01in}
+\item {\bf 2025}: \textbf{UC Berkeley}, \emph{Citrin Center for Public Opinion Research}, \textbf{UCLA}, \emph{Department of Political Science}, \textbf{BYU}, \emph{Initiative for Peacemaking}, \textbf{UCLA}, \emph{Nazarian Center for Israel Studies}.
 
-{\bf 2020}: \textbf{Ben-Gurion University} (Israel), \emph{Department of Economics}, \textbf{WZB Berlin} (Germany), \emph{Institutions and Political Inequality Speakers Series}.\vspace{.01in}
+\item {\bf 2024}: \textbf{Princeton}, \emph{Center for the Study of Democratic Politics}, \textbf{Meta}, \emph{Computational Social Science Seminar}, \textbf{Princeton}, \emph{Program on Race, Ethnicity, and Identity in Politics}, \textbf{CEGA, ESOC, and U.N. Behavioral Insights}, \emph{Roundtable on Engineering Peace}, \textbf{National Institute for Civil Discourse}, \emph{Community Briefing on Effective Depolarization Interventions}.
 
-{\bf 2019}: \textbf{George Washington University}, \emph{Workshop on Israeli politics}.
+\item {\bf 2023}: \textbf{Stanford}, \emph{Identity Politics Seminar}, \textbf{UC Berkeley}, \emph{IR Speaker Series}, \textbf{Stanford}, \emph{Polarization and Social Change Lab}, \textbf{WashU}, \emph{10th Comparative Politics Annual Conference}, \textbf{Stanford}, \emph{CDDRL Speaker Series}, \textbf{Harvard}, \emph{Weatherhead Research Cluster on Identity Politics},  \textbf{UPenn}, \emph{Comparative Politics Workshop}.
+
+\item {\bf 2022}: \textbf{UC Irvine}, \emph{Department of Political Science, Survey Methodology Seminar}, \textbf{Harvard}, \emph{Department of Psychology}.
+
+\item {\bf 2021}: \textbf{Hebrew University} (Israel), \emph{PCIR Lab}, \textbf{Harvard}, \emph{Cushman-Greene Lab}.
+
+\item {\bf 2020}: \textbf{Ben-Gurion University} (Israel), \emph{Department of Economics}, \textbf{WZB Berlin} (Germany), \emph{Institutions and Political Inequality Speakers Series}.
+
+\item {\bf 2019}: \textbf{George Washington University}, \emph{Workshop on Israeli politics}.
+\end{cvhang}
 
 \section{Conferences}
-{\bf 2026}: Bocconi-Columbia Conference on Democratic Resilience (Columbia).\\
-{\bf 2025}: New Research on Inclusive Nationalism (Yale), Polarization Research Lab Annual Conference (Salt Lake City), MOPED (WZB Berlin), EPSA (Madrid), APSA (Vancouver), The Future of Democracy? (WZB Berlin).
+\begin{cvhang}
+\item {\bf 2026}: Bocconi-Columbia Conference on Democratic Resilience (Columbia).
 
-{\bf 2023}: MPSA (Chicago), PolMeth (Stanford), APSA (Los Angeles). 
+\item {\bf 2025}: New Research on Inclusive Nationalism (Yale), Polarization Research Lab Annual Conference (Salt Lake City), MOPED (WZB Berlin), EPSA (Madrid), APSA (Vancouver), The Future of Democracy? (WZB Berlin).
 
-{\bf 2022}: Overcoming Prejudice Conference (University of Pennsylvania), MPSA (Chicago), Berlin Meeting on the Political Economy of Development (WZB Berlin), PolMeth (St. Louis), APSA (Montreal), Toronto Political Behavior Workshop (Toronto). \vspace{.01in}
+\item {\bf 2023}: MPSA (Chicago), PolMeth (Stanford), APSA (Los Angeles).
 
-{\bf 2021}: APSA (Seattle), PolMeth Europe (Virtual Poster), MPSA (Virtual), Harvard Experimental Political Science Conference (Virtual), Chicago Area Political and Social Behavior CAB Workshop (Virtual Poster, hosted at Northwestern University).\vspace{.01in}
+\item {\bf 2022}: Overcoming Prejudice Conference (University of Pennsylvania), MPSA (Chicago), Berlin Meeting on the Political Economy of Development (WZB Berlin), PolMeth (St. Louis), APSA (Montreal), Toronto Political Behavior Workshop (Toronto).
 
-{\bf 2020}: The Dynamics of Decentralization in MENA (The University of Gothenburg), CSES Conference on Experimental Political Science (NYU), POMEPS Working Group (Virtual), APSA (Virtual).\vspace{.01in}
+\item {\bf 2021}: APSA (Seattle), PolMeth Europe (Virtual Poster), MPSA (Virtual), Harvard Experimental Political Science Conference (Virtual), Chicago Area Political and Social Behavior CAB Workshop (Virtual Poster, hosted at Northwestern University).
 
-{\bf 2019}: Eurasian Peace Science (Jerusalem), Winter Experimental Social Science Institute (WESSI, NYU Abu-Dhabi), Economic Science Association (ESA, NYU Abu-Dhabi), ISA (Toronto), MPSA (Chicago), Political Psychology APSA Pre-Conference (Washington D.C.), APSA (Washington D.C.), Peace Science (Manhattan, Kansas).\vspace{.01in}
+\item {\bf 2020}: The Dynamics of Decentralization in MENA (The University of Gothenburg), CSES Conference on Experimental Political Science (NYU), POMEPS Working Group (Virtual), APSA (Virtual).
 
-{\bf 2018}: ISA (San Francisco).
+\item {\bf 2019}: Eurasian Peace Science (Jerusalem), Winter Experimental Social Science Institute (WESSI, NYU Abu-Dhabi), Economic Science Association (ESA, NYU Abu-Dhabi), ISA (Toronto), MPSA (Chicago), Political Psychology APSA Pre-Conference (Washington D.C.), APSA (Washington D.C.), Peace Science (Manhattan, Kansas).
 
-
-
-
-%\section{Additional Training}
-%\vspace{.1in}
-%{\bf The Middlebury Arabic School} \hfill  2018\vspace{.01in}
-
-%{\bf Oxford Spring School in Advanced Research Methods} \hfill  2016
-
+\item {\bf 2018}: ISA (San Francisco).
+\end{cvhang}
 
 \section{Awards \& Grants}
-\vspace{.1in}
 
-\textbf{Dean’s Excellence Award}, University of Toronto \hfill 2025-2026 \vspace{.01in}
-
-\textbf{SSHRC Insight Development Grant} \hfill 2026-2028 \vspace{.01in}
-
-\textbf{Andrew Carnegie Fellowship} \hfill 2026-2028 \vspace{.01in}
-
-\textbf{Public Agenda Research Fund Award} \hfill Spring 2024 \vspace{.01in}
-
-\textbf{Democracy Communications Fund Research Award} \hfill Spring 2024 \vspace{.01in}
-
-\textbf{Center for Jewish Studies Travel Grant}, UW--Madison \hfill Summer 2022 \vspace{.01in}
-
-\textbf{National Science Foundation PolMeth Conference Travel Grant} \hfill  Summer 2022 \vspace{.01in}
-
-\textbf{Charles and Gayle Mazursky Student Support Fund}, UW--Madison \hfill  Spring 2021 \vspace{.01in}
-
-\textbf{Political Science Summer Writing Grant}, UW--Madison \hfill 2021\vspace{.01in}
-
-\textbf{Political Science Summer Initiative Grant}, UW--Madison \hfill 2021\vspace{.01in}
-
-\textbf{Horowitz Foundation for Social Policy Research Grant}, National Compettition \hfill 2020\vspace{.01in}
-
-\textbf{Graduate Student Travel/Research Grant Competition}, UW--Madison \hfill 2020\vspace{.01in}
-
-\textbf{Political Science Summer Initiative Grant}, UW--Madison \hfill 2020\vspace{.01in}
-
-\textbf{POMEPS Travel Grant} \hfill 2020\vspace{.01in}
-
-\textbf{IRIS Graduate Student Summer Fieldwork Award,} UW--Madison \hfill 2019\vspace{.01in}
-
-\textbf{The Morris Abrams Award in International Relations}, National Compettition \hfill 2019\vspace{.01in}
-
-\textbf{Political Science Summer Initiative Grant}, UW--Madison \hfill 2019\vspace{.01in}
-
-\textbf{IR Graduate Student Travel/Research Grant Competition}, UW--Madison \hfill 2019\vspace{.01in}
-
-\textbf{Graduate Student Travel Award}, Elections Research Center, UW--Madison \hfill  2019\vspace{.01in}
-
-\textbf{Best Graduate Paper in the 8th Eurasian Peace Science Conference} \hfill  2019\vspace{.01in}
-
-\textbf{Charles and Gayle Mazursky Student Support Fund}, UW--Madison \hfill  Fall 2018\vspace{.01in}
-
-\textbf{Student Research Travel Grant}, UW--Madison \hfill 2018\vspace{.01in}
-
-\textbf{Foreign Language and Area Studies (FLAS) Yearly Fellowship} (\emph{Declined}) \hfill 2018\vspace{.01in}
-
-\textbf{The Morris Falk Institute for Economic Research in Israel}, Hebrew University \hfill  2018\vspace{.01in}
-
-\textbf{The Harry S. Truman Institute Research Grant}, Hebrew University \hfill  2018\vspace{.01in}
-
-\textbf{Israel Institute Research Grant} \hfill  2018\vspace{.01in}
-
-\textbf{Charles and Gayle Mazursky Student Support Fund}, UW--Madison \hfill  Spring 2018\vspace{.01in}
-
-\textbf{Foreign Language and Area Studies (FLAS) Summer Fellowship} \hfill 2018\vspace{.01in}
-
-\textbf{IR Graduate Student Travel/Research Grant Competition}, UW--Madison \hfill 2018\vspace{.01in}
-
-\textbf{Minerva Center for Human Rights Research Grant}, Hebrew University \hfill 2017\vspace{.01in}
-
-\textbf{Isaac and Ida Lipton Study Abroad Fellowship}, UW-Madison \hfill 2017\vspace{.01in}
-
-\textbf{Charles and Gayle Mazursky Student Support Fund}, UW-Madison \hfill  Fall 2017\vspace{.01in}
-
-
-
-
-%\section{Research Experience}
+\cvrow{\textbf{Dean's Excellence Award}, University of Toronto}{2025--2026}
+\cvrow{\textbf{SSHRC Insight Development Grant}}{2026--2028}
+\cvrow{\textbf{Andrew Carnegie Fellowship}}{2026--2028}
+\cvrow{\textbf{Public Agenda Research Fund Award}}{Spring 2024}
+\cvrow{\textbf{Democracy Communications Fund Research Award}}{Spring 2024}
+\cvrow{\textbf{Center for Jewish Studies Travel Grant}, UW--Madison}{Summer 2022}
+\cvrow{\textbf{National Science Foundation PolMeth Conference Travel Grant}}{Summer 2022}
+\cvrow{\textbf{Charles and Gayle Mazursky Student Support Fund}, UW--Madison}{Spring 2021}
+\cvrow{\textbf{Political Science Summer Writing Grant}, UW--Madison}{2021}
+\cvrow{\textbf{Political Science Summer Initiative Grant}, UW--Madison}{2021}
+\cvrow{\textbf{Horowitz Foundation for Social Policy Research Grant}, National Competition}{2020}
+\cvrow{\textbf{Graduate Student Travel/Research Grant Competition}, UW--Madison}{2020}
+\cvrow{\textbf{Political Science Summer Initiative Grant}, UW--Madison}{2020}
+\cvrow{\textbf{POMEPS Travel Grant}}{2020}
+\cvrow{\textbf{IRIS Graduate Student Summer Fieldwork Award}, UW--Madison}{2019}
+\cvrow{\textbf{The Morris Abrams Award in International Relations}, National Competition}{2019}
+\cvrow{\textbf{Political Science Summer Initiative Grant}, UW--Madison}{2019}
+\cvrow{\textbf{IR Graduate Student Travel/Research Grant Competition}, UW--Madison}{2019}
+\cvrow{\textbf{Graduate Student Travel Award}, Elections Research Center, UW--Madison}{2019}
+\cvrow{\textbf{Best Graduate Paper in the 8th Eurasian Peace Science Conference}}{2019}
+\cvrow{\textbf{Charles and Gayle Mazursky Student Support Fund}, UW--Madison}{Fall 2018}
+\cvrow{\textbf{Student Research Travel Grant}, UW--Madison}{2018}
+\cvrow{\textbf{Foreign Language and Area Studies (FLAS) Yearly Fellowship} (\emph{Declined})}{2018}
+\cvrow{\textbf{The Maurice Falk Institute for Economic Research in Israel}, Hebrew University}{2018}
+\cvrow{\textbf{The Harry S. Truman Institute Research Grant}, Hebrew University}{2018}
+\cvrow{\textbf{Israel Institute Research Grant}}{2018}
+\cvrow{\textbf{Charles and Gayle Mazursky Student Support Fund}, UW--Madison}{Spring 2018}
+\cvrow{\textbf{Foreign Language and Area Studies (FLAS) Summer Fellowship}}{2018}
+\cvrow{\textbf{IR Graduate Student Travel/Research Grant Competition}, UW--Madison}{2018}
+\cvrow{\textbf{Minerva Center for Human Rights Research Grant}, Hebrew University}{2017}
+\cvrow{\textbf{Isaac and Ida Lipton Study Abroad Fellowship}, UW--Madison}{2017}
+\cvrow{\textbf{Charles and Gayle Mazursky Student Support Fund}, UW--Madison}{Fall 2017}%\section{Research Experience}
 
 %\textbf{Research Assistant} 
 %\begin{innerlist}
@@ -704,80 +682,72 @@ Bassan-Nygate, Lotem, and \textbf{Chagai M. Weiss}. ``\href{https://apsamena.org
 %\item[]  Supervisor: Prof. Scott Straus (The University of Wisconsin - Madison)
 %\item[]  Supervisor: Prof. Jonathan Renshon (The University of Wisconsin - Madison)
 %\item[]  Supervisor: Prof. Dan Miodownik (The Hebrew University, Political Science)
-%\item[]  Supervisor: Prof. Sharon Gilad (The Hebrew University, Political Science)\vspace*{-3mm}
-%\end{innerlist}
+%\item[]  Supervisor: Prof. Sharon Gilad (The Hebrew University, Political Science)%\end{innerlist}
 
 
 \section{Teaching}
-\vspace{.1in}
-{\bf Primary Instructor:} Causal Inference \hfill Fall 2025\\
-Graduate Course, The University of Toronto.
+{\bf Primary Instructor:}
+\cvsubrow{The Politics of Identity and Intergroup Relations in Israel\\
+Advanced Undergraduate Course, The University of Toronto.}{Fall 2026}
+\vspace{.04in}
+\cvsubrow{Causal Inference\\
+Graduate Course, The University of Toronto.}{Fall 2025}
 
-{\bf Teaching Assistant:} Research Methods in Political Science \hfill Fall 2018\\
-Professor Jessica Weeks, University of Wisconsin--Madison\\
+\vspace{.04in}
+{\bf Teaching Assistant:}
+\cvsubrow{Research Methods in Political Science\\
+Professor Jessica Weeks, University of Wisconsin--Madison}{Fall 2018}
 
 %{\bf Grader:} Israeli Politics and Society \hfill Spring 2018\\
 %Professor Nadav Shelef, University of Wisconsin--Madison\\
-\vspace*{-4mm}
 
 
 \section{Service}
-\vspace{.1in}
-{\bf Journal Referee:} \emph{American Journal of Political Science, American Political Science Review, Comparative Political Studies, Conflict Management and Peace Science, Conflict Resolution Quarterly, Economic Journal, Ethnopolitics, Electoral Studies, Frontiers in Psychology, Human Right Review, International Organizations, International Studies Quarterly, Journal of Conflict Resolution, Journal of Elections, Public Opinion and Parties, Journal of Accounting and Economics, Journal of Experimental Political Science, Journal of Hospital Management and Health Policy, Journal of Peace Research, Journal of Politics, Local Government Studies, Nature Human Behavior, Organizational Behavior and Human Decision Processes, Party Politics, PNAS, PNAS Nexus, Political Behavior, Political Geography, Political Psychology, Political Research Quarterly, Political Science Research and Methods, Political Studies, Psychological Science, Public Administration, Public Opinion Quarterly, Quarterly Journal of Economics, Science Advances, Social Psychological and Personality Science, World Politics}.\\\vspace*{-2mm}
+\begin{cvhang}
+\item {\bf Journal Referee:} \emph{American Journal of Political Science, American Political Science Review, Comparative Political Studies, Conflict Management and Peace Science, Conflict Resolution Quarterly, Economic Journal, Electoral Studies, Ethnopolitics, Frontiers in Psychology, Human Rights Review, International Organization, International Studies Quarterly, Journal of Accounting and Economics, Journal of Conflict Resolution, Journal of Elections, Public Opinion and Parties, Journal of Experimental Political Science, Journal of Hospital Management and Health Policy, Journal of Peace Research, Journal of Politics, Local Government Studies, Nature Human Behaviour, Organizational Behavior and Human Decision Processes, Party Politics, PNAS, PNAS Nexus, Political Behavior, Political Geography, Political Psychology, Political Research Quarterly, Political Science Research and Methods, Political Studies, Psychological Science, Public Administration, Public Opinion Quarterly, Quarterly Journal of Economics, Science Advances, Social Psychological and Personality Science, World Politics}.\\
 
-{\bf Press Referee:} \emph{Cambridge University Press (Elements in Experimental Political Science), Princeton University Press}.\\\vspace*{-2mm}
+\item {\bf Press Referee:} \emph{Cambridge University Press (Elements in Experimental Political Science), Oxford University Press, Princeton University Press}.\\
 
-{\bf Funding Referee:} \emph{The German Israeli Foundation For Scientific Research \& Development, National Science Foundation, Strengthening Democracy Field Test Grants, TESS, U.S.-Israel Binational Science Foundation,}.\\\vspace*{-2mm}
+\item {\bf Funding Referee:} \emph{The German Israeli Foundation For Scientific Research \& Development, National Science Foundation, Strengthening Democracy Field Test Grants, TESS, U.S.-Israel Binational Science Foundation}.\\
 
+\item {\bf Award Committees:} \emph{APSA best paper award in experimental political science} (2023), \emph{MPSA best paper award in political behavior} (2025), \emph{APSA best paper award in experimental political science} (2025).\\
 
-{\bf Award Committees:} \emph{APSA best paper award in experimental political science} (2023), \emph{MPSA best paper award in political behavior} (2025), \emph{APSA best paper award in experimental political science} (2025).\\\vspace*{-2mm}
-
-
-
-{\bf Co-Founder and Coordinator:} \href{https://igr.netlify.app/}{IGR} -- The Intergroup Relations Workshop  \hfill  2020\\
-Monthly working group to discuss research on intergroup relations\\
-With Cara Wong, Rebecca Littman, and Alexandra Scacco\\
-{\bf Co-Founder and Coordinator:} Comparative Politics Graduate Working Group \hfill  2019\\
-University of Wisconsin--Madison, With Anton Shirikov\\
+%{\bf Co-Founder and Coordinator:} \href{https://igr.netlify.app/}{IGR} -- The Intergroup Relations Workshop  \hfill  2020\\
+%Monthly working group to discuss research on intergroup relations\\
+%With Cara Wong, Rebecca Littman, and Alexandra Scacco\\
+%{\bf Co-Founder and Coordinator:} Comparative Politics Graduate Working Group \hfill  2019\\
+%University of Wisconsin--Madison, With Anton Shirikov\\
 %{\bf Student Coordinator:} Experimental Politics Workshop \hfill  2019\\
 %University of Wisconsin -- Madison\\
-{\bf Student Coordinator:} CP and Experimental Politics Colloquia \hfill  2018-2019\\
-University of Wisconsin -- Madison\\\vspace*{-4mm}
-%\item[]{\bf Student Co-Coordinator:} Political Economy Colloquium \hfill  2018-2019\\
+%{\bf Student Coordinator:} CP and Experimental Politics Colloquia \hfill  2018--2019\\
+%University of Wisconsin--Madison\\%\item[]{\bf Student Co-Coordinator:} Political Economy Colloquium \hfill  2018-2019\\
 %The Department of Political Science, \\ University of Wisconsin -- Madison
 %\item[]{\bf Student Coordinator:} Graduate Student Political Methodology Workshop \hfill  2017\\
 %The Departments of International Relations \& Political Science, \\The Hebrew University of Jerusalem, IL
 %\item[]{\bf Student Coordinator:} The Middle East After the Arab Spring \hfill  2016\\
 %The Davis Institute, The Hebrew University of Jerusalem, IL
 %\item[]{\bf Student Coordinator:} Israel Under The Shadow of Conflict \hfill  2016\\
-%The Davis Institute, The Hebrew University of Jerusalem, IL\vspace*{-3mm}
-
+%The Davis Institute, The Hebrew University of Jerusalem, IL
 %\newpage
+\end{cvhang}
+
 \section{Other Professional Experience}
-{\bf Strategies for Civic Inclusion Network} \hfill  2025-\\
+\cvrow{{\bf Strategies for Civic Inclusion Network}}{2025--}
 Team Member\\
-{\bf \href{https://polarizationresearchlab.org/team/}{Polarization Research Lab}} \hfill  2023-\\
+\cvrow{{\bf \href{https://polarizationresearchlab.org/team/}{Polarization Research Lab}}}{2023--}
 Global Advisor\\
-{\bf \href{https://en.achord.huji.ac.il/}{aChord} -- Social Psychology for Social Change} \hfill  2020\\
+\cvrow{{\bf \href{https://en.achord.huji.ac.il/}{aChord} -- Social Psychology for Social Change}}{2020}
 Research Consultant, Israel\\
-{\bf \href{https://zulat.org.il/en/}{Zulat} -- Equality and Human Rights} \hfill  2020\\
-Research Consultant, Israel\\\vspace*{-4mm}
-%{\bf Military Service (Israel)} \hfill  2009-2012\\
+\cvrow{{\bf \href{https://zulat.org.il/en/}{Zulat} -- Equality and Human Rights}}{2020}
+Research Consultant, Israel\\%{\bf Military Service (Israel)} \hfill  2009-2012\\
 %Mandatory Service as a Paratrooper's Commander
-
-
-\section{Software}
-
-R, STATA, ArcMap, QGIS, SQL\vspace*{-3mm}
-
 
 \section{Languages}
 
-\textbf{Hebrew} (Native), \textbf{Modern Standard Arabic} (Advanced), \textbf{Levantine Arabic} (Intermediate) \vspace*{-6mm}
+\textbf{Hebrew} (Native), \textbf{Modern Standard Arabic} (Advanced), \textbf{Levantine Arabic} (Intermediate) 
 
 
 \section{Last Updated:} \today
-
 
 
 \end{document}
