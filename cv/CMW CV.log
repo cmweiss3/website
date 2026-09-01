@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  27 AUG 2026 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  30 AUG 2026 09:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,12 +689,6 @@ Package xcolor Warning: Incompatible color definition on input line 460.
 Package xcolor Warning: Incompatible color definition on input line 465.
 
 
-Overfull \hbox (0.82861pt too wide) in paragraph at lines 465--467
-\OT1/ptm/m/n/10.95 u-dice To-ward Arabs.[][]'' \OT1/ptm/m/it/10.95 Pro-ceed-ing
-s of the Na-tional Academy of Sci-ences\OT1/ptm/m/n/10.95 , 118(14) (2021).  
- []
-
-
 Package xcolor Warning: Incompatible color definition on input line 470.
 
 
@@ -802,11 +796,11 @@ Package rerunfilecheck Info: File `"CMW CV".out' has not changed.
 (rerunfilecheck)             Checksum: 60DCD85AEC60581F0223017BBD2CB70C;1983.
  ) 
 Here is how much of TeX's memory you used:
- 13421 strings out of 478268
- 205664 string characters out of 5846347
+ 13424 strings out of 478268
+ 205696 string characters out of 5846347
  524506 words of memory out of 5000000
- 31400 multiletter control sequences out of 15000+600000
- 490673 words of font info for 75 fonts, out of 8000000 for 9000
+ 31401 multiletter control sequences out of 15000+600000
+ 492302 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,13n,80p,1157b,568s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -814,12 +808,13 @@ exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
 ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 105099 bytes).
+exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on "CMW CV.pdf" (6 pages, 117338 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
+ 212 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  24 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
