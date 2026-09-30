@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  30 AUG 2026 09:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  13 SEP 2026 16:55
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **"CMW CV.tex"
 (./CMW CV.tex
@@ -811,7 +812,7 @@ ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 117338 bytes).
+Output written on "CMW CV.pdf" (6 pages, 117336 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams
