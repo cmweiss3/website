@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  13 SEP 2026 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  3 OCT 2026 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -706,7 +706,10 @@ Package xcolor Warning: Incompatible color definition on input line 501.
 Package xcolor Warning: Incompatible color definition on input line 502.
 
 
-Package xcolor Warning: Incompatible color definition on input line 504.
+Package xcolor Warning: Incompatible color definition on input line 503.
+
+
+Package xcolor Warning: Incompatible color definition on input line 505.
 
 
 Overfull \hbox (8.099pt too wide) in paragraph at lines 573--574
@@ -812,10 +815,10 @@ ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 117336 bytes).
+Output written on "CMW CV.pdf" (6 pages, 117391 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
+ 214 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
  24 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
