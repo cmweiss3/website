@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  8 OCT 2026 15:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.30)  17 NOV 2026 20:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -712,84 +712,84 @@ Package xcolor Warning: Incompatible color definition on input line 505.
 Package xcolor Warning: Incompatible color definition on input line 507.
 
 
-Overfull \hbox (8.099pt too wide) in paragraph at lines 575--576
+Overfull \hbox (8.099pt too wide) in paragraph at lines 578--579
 []\OT1/ptm/m/n/10.95 Littman, Re-becca, Alexan-dra Scacco, and \OT1/ptm/b/n/10.
 95 Cha-gai M. Weiss\OT1/ptm/m/n/10.95 . ``Re-duc-ing Prej-u-dice through 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 576.
-
-
-Package xcolor Warning: Incompatible color definition on input line 577.
-
-
-Package xcolor Warning: Incompatible color definition on input line 578.
-
-
 Package xcolor Warning: Incompatible color definition on input line 579.
 
 
-Overfull \hbox (9.96074pt too wide) in paragraph at lines 579--590
+Package xcolor Warning: Incompatible color definition on input line 580.
+
+
+Package xcolor Warning: Incompatible color definition on input line 581.
+
+
+Package xcolor Warning: Incompatible color definition on input line 582.
+
+
+Overfull \hbox (9.96074pt too wide) in paragraph at lines 582--593
 []\OT1/ptm/b/n/10.95 Weiss, Cha-gai M. \OT1/ptm/m/n/10.95 ``[][]Seg-re-ga-tion,
  In-te-gra-tion, and In-ter-group Re-la-tions in Is-rael.[][]'' \OT1/ptm/m/it/1
 0.95 POMEPS 
  []
 
-
-Package xcolor Warning: Incompatible color definition on input line 594.
-
-
-Package xcolor Warning: Incompatible color definition on input line 596.
-
-
-Package xcolor Warning: Incompatible color definition on input line 598.
-
 [3]
 
-Package xcolor Warning: Incompatible color definition on input line 600.
+Package xcolor Warning: Incompatible color definition on input line 597.
 
 
-Package xcolor Warning: Incompatible color definition on input line 602.
+Package xcolor Warning: Incompatible color definition on input line 599.
+
+
+Package xcolor Warning: Incompatible color definition on input line 601.
+
+
+Package xcolor Warning: Incompatible color definition on input line 603.
+
+
+Package xcolor Warning: Incompatible color definition on input line 605.
 
 [4]
-Underfull \hbox (badness 1062) in paragraph at lines 657--657
+Underfull \hbox (badness 1062) in paragraph at lines 660--660
 []\OT1/ptm/b/n/10.95 Horowitz Foun-da-tion for So-cial Pol-icy Re-search Grant\
 OT1/ptm/m/n/10.95 , Na-tional 
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 662--662
+Underfull \hbox (badness 1360) in paragraph at lines 665--665
 []\OT1/ptm/b/n/10.95 The Mor-ris Abrams Award in In-ter-na-tional Re-la-tions\O
 T1/ptm/m/n/10.95 , Na-tional 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 738--739
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 739.
+Package xcolor Warning: Incompatible color definition on input line 742.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 741.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 743--744
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 743.
+Package xcolor Warning: Incompatible color definition on input line 744.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 744--746
+Underfull \hbox (badness 10000) in paragraph at lines 745--746
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 746.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--749
 
  []
 
@@ -806,7 +806,7 @@ Here is how much of TeX's memory you used:
  31401 multiletter control sequences out of 15000+600000
  492302 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,80p,1157b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,13n,80p,1148b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -815,7 +815,7 @@ ive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on "CMW CV.pdf" (6 pages, 117407 bytes).
+Output written on "CMW CV.pdf" (6 pages, 117473 bytes).
 PDF statistics:
  214 PDF objects out of 1000 (max. 8388607)
  190 compressed objects within 2 object streams
